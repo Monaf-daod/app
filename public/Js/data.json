@@ -1,0 +1,164 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "icon_name": "icon fa fa-database fa-3x",
+      "title": "Systems",
+      "body": "See More",
+      "category": "system"
+    },
+    {
+      "id": 2,
+      "icon_name": "icon fa fa-shopping-cart fa-3x",
+      "title": "E-Commerce",
+      "body": "See More",
+      "category": "e-commerce"
+    },
+    {
+      "id": 3,
+      "icon_name": "icon fa fa-globe fa-3x",
+      "title": "Websites",
+      "body": "See More",
+      "category": "websites"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "image": "/images/portfolio-img1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "/images/portfolio-img2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "/images/portfolio-img3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "/images/portfolio-img4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "/images/portfolio-img5.jpg"
+    },
+    {
+      "id": 6,
+      "image": "/images/portfolio-img6.jpg"
+    },
+    {
+      "id": 7,
+      "image": "/images/portfolio-img7.jpg"
+    },
+    {
+      "id": 8,
+      "image": "/images/portfolio-img8.jpg"
+    }
+  ],
+  "social": [
+    {
+      "id": 1,
+      "icon": "icon fa fa-facebook fa-lg",
+      "title": "Follow Me on",
+      "body": "Social Facebook"
+    },
+    {
+      "id": 2,
+      "icon": "icon fa fa-twitter fa-lg",
+      "title": "Tweet Me on",
+      "body": "Social twitter"
+    },
+    {
+      "id": 3,
+      "icon": "icon fa fa-pinterest fa-lg",
+      "title": "Pin Me on",
+      "body": "Social Pinterest"
+    }
+  ],
+  "profile": [
+    {
+      "name": "Monaf Daod",
+      "birthday": "25/11/1991",
+      "address": "Tartous",
+      "phone": "+964946431335",
+      "email": "monaf2daod@gmail.com",
+      "websit": "www.google.com"
+    }
+  ],
+  "skilles": [
+    {
+      "id": 1,
+      "title": "Bootstrap",
+      "process": "100%"
+    },
+    {
+      "id": 2,
+      "title": "Css3",
+      "process": "90%"
+    },
+    {
+      "id": 3,
+      "title": "Photoshop",
+      "process": "80%"
+    },
+    {
+      "id": 4,
+      "title": "React",
+      "process": "75%"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "category": "system",
+      "title": "Ajman Self Inspiction",
+      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
+      "images": []
+    },
+    {
+      "id": 2,
+      "category": "system",
+      "title": "Meta CMS",
+      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
+      "images": []
+    },
+    {
+      "id": 3,
+      "category": "system",
+      "title": "Spare Parts admin Panel",
+      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
+      "images": [
+        "/images/projects/sparePartsAdmin/1.png",
+        "/images/projects/sparePartsAdmin/2.png",
+        "/images/projects/sparePartsAdmin/3.png",
+        "/images/projects/sparePartsAdmin/4.png",
+        "/images/projects/sparePartsAdmin/5.png",
+        "/images/projects/sparePartsAdmin/6.jpeg",
+        "/images/projects/sparePartsAdmin/7.png",
+        "/images/projects/sparePartsAdmin/8.png",
+        "/images/projects/sparePartsAdmin/9.png",
+        "/images/projects/sparePartsAdmin/10.png",
+        "/images/projects/sparePartsAdmin/11.png",
+        "/images/projects/sparePartsAdmin/12.png",
+        "/images/projects/sparePartsAdmin/13.png",
+        "/images/projects/sparePartsAdmin/14.png",
+        "/images/projects/sparePartsAdmin/15.png"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "e-commerce",
+      "title": "AE Spare Parts",
+      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
+      "images": []
+    },
+    {
+      "id": 5,
+      "category": "websites",
+      "title": "Meta Website",
+      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
+      "images": []
+    }
+  ]
+}
