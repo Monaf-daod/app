@@ -19,6 +19,7 @@ const Navbar = ({ sections }) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  /// function for handling navigation bar position and its background color
   useEffect(() => {
     document.addEventListener("scroll", () => {
       if (window.scrollY > 120) setBackgroundVisibility(false);
@@ -27,6 +28,25 @@ const Navbar = ({ sections }) => {
     return document.removeEventListener("scroll", () => {
       if (window.scrollY > 100) setBackgroundVisibility(false);
       else setBackgroundVisibility(true);
+    });
+  }, []);
+
+  /// function for closeing vertical menu on clicking outside menu
+  useEffect(() => {
+    document.addEventListener("click", (e) => {
+      if (
+        e.target.id !== "verticalMenuToggler" &&
+        e.target.id !== "verticalMenu"
+      )
+        setIsOpen(false);
+    });
+
+    return document.removeEventListener("click", (e) => {
+      if (
+        e.target.id !== "verticalMenuToggler" &&
+        e.target.id !== "verticalMenu"
+      )
+        setIsOpen(false);
     });
   }, []);
 
@@ -68,8 +88,8 @@ const Navbar = ({ sections }) => {
         </ListItem>
       </UlList>
       <VerticalMenu>
-        <MenuSvg src={MenuIcon} onClick={toggle} />
-        <VerticalItemsList isOpen={isOpen}>
+        <MenuSvg src={MenuIcon} onClick={toggle} id="verticalMenuToggler" />
+        <VerticalItemsList isOpen={isOpen} id="verticalMenu">
           <VerticalListItem
             onClick={() => {
               window.scrollTo({
