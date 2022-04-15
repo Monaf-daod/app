@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   NavbarSection,
-  Logo,
-  LogoText,
   UlList,
   ListItem,
   MenuSvg,
@@ -52,9 +50,6 @@ const Navbar = ({ sections }) => {
 
   return (
     <NavbarSection backgroundVisible={backgroundVisiblity}>
-      <Logo>
-        <LogoText>Portfolio</LogoText>
-      </Logo>
       <UlList>
         <ListItem
           onClick={() =>

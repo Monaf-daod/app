@@ -15,21 +15,9 @@ export const NavbarSection = styled.div`
   align-items: center;
   justify-content: space-between;
   z-index: 9999;
-`;
-
-export const Logo = styled.div`
-  width: 30%;
-`;
-
-export const LogoText = styled.h2`
-  font-size: 26px;
-  font-weight: 800;
-  font-style: italic;
-  text-align: center;
-  color: #fff;
-  text-shadow: 0 1px 0 #1a374d, 0 2px 0 #1a374d80, 0 3px 0 #1a374d70,
-    0 4px 0 #1a374d60, 0 5px 0 #1a374d50, 0 6px 1px #1a374d50, 0 0 5px #1a374d40,
-    0 1px 3px #1a374d20, 0 3px 5px #1a374d10;
+  @media (min-width: 320px) and (max-width: 767px) {
+    background: transparent;
+  }
 `;
 
 export const UlList = styled.div`
@@ -37,7 +25,6 @@ export const UlList = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  display: unset;
   @media (min-width: 320px) and (max-width: 767px) {
     display: none;
   }
@@ -65,16 +52,18 @@ export const VerticalMenu = styled.div`
 `;
 
 export const VerticalItemsList = styled.div`
-  width: 50vw;
+  width: ${(props) => (props.isOpen ? "50vw" : "0vw")};
   height: 100vh;
   background: #fff;
+  overflow: hidden;
   position: fixed;
-  right: 0;
   top: 0;
-  display: ${(props) => (props.isOpen ? "inline-flex" : "none")};
-  flex-direction: ${(props) => (props.isOpen ? "column" : "unset")};
-  align-items: ${(props) => (props.isOpen ? "center" : "unset")};
-  justify-content: ${(props) => (props.isOpen ? "flex-start" : "unset")};
+  left: ${(props) => (props.isOpen ? 0 : "-200px")};
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: left 0.7s ease-in-out, width 0.8s ease;
 `;
 
 export const MenuSvg = styled.img`
