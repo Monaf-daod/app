@@ -1,121 +1,190 @@
 import styled from "styled-components";
+import { ChevronLeft, ChevronRight } from "react-feather";
 
 export const WorkSection = styled.div`
-  height: auto;
-  padding: 50px 0;
-  overflow: hidden;
-  background: #fff1e1;
-`;
-
-export const Worktitle = styled.h2`
-  font-size: 60px;
-  color: #1d3c45;
-  text-shadow: -1px 5px 5px #d2601a;
-`;
-
-export const Span = styled.span`
-  font-weight: 200;
-  color: #1d3c45;
-`;
-
-export const Workpart = styled.div`
-  margin-top: 20px;
-  width: 30%;
-  float: left;
-  position: relative;
-  height: auto;
-  padding: 100px 0;
-  border: 1px solid #d2601a70;
-  border-radius: 10px;
-  box-sizing: border-box;
-  text-align: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin-left: 5%;
-  margin-left: ${(props) => (props.first === 1 ? "0" : "5%")};
-  :before {
-    content: "";
-    width: 0%;
-    height: 0%;
-    visibility: hidden;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    border-top: 2px solid #d2601a;
-    border-left: 2px solid #d2601a;
-    border-radius: 10px;
-  }
-  :hover:before {
-    width: 100%;
-    height: 100%;
-    visibility: visible;
-    transition: width 0.7s ease-in, height 0.7s ease-in, visibility 0.7s ease-in;
-  }
-  :after {
-    content: "";
-    width: 0%;
-    height: 0%;
-    visibility: hidden;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    border-bottom: 2px solid #d2601a;
-    border-right: 2px solid #d2601a;
-    border-radius: 10px;
-  }
-  :hover:after {
-    width: 100%;
-    height: 100%;
-    visibility: visible;
-    transition: width 0.7s ease-in, height 0.7s ease-in, visibility 0.7s ease-in;
-  }
-  :hover p {
-    opacity: 1;
-    transform: translateY(-30%);
-    transition: transform 0.7s ease-in-out, opacity 1s ease-in-out;
-  }
-  :hover hr {
-    opacity: 1;
-    transition: opacity 0.4s ease-in-out;
-  }
-  :hover h4,
-  :hover i {
-    transform: translateY(-50%);
-    transition: transform 0.7s ease-in-out;
+  align-items: flex-start;
+  padding: 1rem 2rem;
+  padding-top: 5rem;
+  @media (min-width: 320px) and (max-width: 1024px) {
+    h2 {
+      align-self: center;
+    }
   }
 `;
-
-export const Workicon = styled.i`
-  color: #1d3c45;
-  margin-bottom: 20px;
-  transform: translateY(100%);
-  transition: transform 0.7s ease-in-out;
+export const Worktitle = styled.h2`
+  font-size: 2rem;
+  color: var(--primary-font-color);
+  align-self: center;
+  @media (min-width: 320px) and (max-width: 1024px) {
+    font-size: 1.5rem;
+  }
 `;
-
+export const WorkSwiperContainer = styled.div`
+  display: block;
+  margin: 0rem auto;
+  margin-top: 1rem;
+  width: 90%;
+  overflow: hidden;
+  @media (min-width: 320px) and (max-width: 499px) {
+    width: 99%;
+  }
+`;
 export const Parttitle = styled.h4`
-  font-size: 25px;
-  color: #d2601a;
-  margin-bottom: 20px;
-  transform: translateY(100%);
-  transition: transform 0.7s ease-in-out;
+  font-size: 1.4rem;
+  color: var(--primary-font-color);
+  @media (min-width: 320px) and (max-width: 1150px) {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1.5rem;
+  }
 `;
-
-export const Line = styled.hr`
-  width: 60%;
-  margin: auto;
-  margin-bottom: 20px;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+export const TechniquesTitle = styled.h6`
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--third-font-color);
+  @media (min-width: 1440px) {
+    font-size: 1.3rem;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
 `;
-
+export const TechniquesIconsContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
+  }
+`;
+export const TechniqueImage = styled.img`
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.3rem;
+`;
 export const Partdesc = styled.p`
-  font-size: 14px;
-  color: #1d3c45;
-  padding: 20px;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 0.7s ease-in-out, transform 0.7s ease-in-out;
+  font-size: 1rem;
+  color: var(--second-font-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  min-height: 2.5rem;
+   line-height: 1.3rem,
+  opacity: 1;
+  max-width:90%;
+  transition: opacity 0.7s ease-in-out;
+   @media (min-width: 320px) and (max-width: 767px) {
+    min-height: 4rem;
+   line-height: 1rem,
+  }
+`;
+export const SeeMoreButton = styled.button`
+  background: var(--main-background-color);
+  padding: 0.3rem 1.2rem;
+  margin-top: 2rem;
+  color: var(--primary-font-color);
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid var(--primary-font-color);
+  border-radius: 20px 0px 20px 0px;
+  :hover {
+    background: var(--primary-font-color);
+    color: var(--main-background-color);
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin-top: 0.5rem;
+  }
+`;
+
+/**---------------------New Design----------------------- */
+export const WorkSlideContainer = styled.div`
+  background-color: var(--main-background-color);
+  height: 420px;
+  display: flex;
+  flex-direction: row;
+  @media (min-width: 320px) and (max-width: 767px) {
+    flex-direction: column;
+  }
+`;
+export const WorkSliderButtonsContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+export const WorkDetailsSection = styled.div`
+  width: 50%;
+  height: 100%;
+  background-color: var(--main-background-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    height: 50%;
+  }
+`;
+export const WorkImagesSection = styled.div`
+  width: 50%;
+  height: 100%;
+  background-color: var(--main-background-color);
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 100%;
+    height: 50%;
+  }
+`;
+export const WorkImageItem = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(30% 0, 100% 0%, 100% 100%, 16% 100%);
+  @media (min-width: 320px) and (max-width: 767px) {
+    clip-path: unset;
+  }
+`;
+export const WorkInnerImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+`;
+export const ChevronLeftButton = styled(ChevronLeft)`
+  color: var(--main-background-color);
+  background: var(--primary-font-color);
+  cursor: pointer;
+  opacity: 0.3;
+  margin: 0rem;
+  :hover {
+    opacity: 1;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin: 0rem 0.22rem;
+  }
+`;
+export const ChevronRightButton = styled(ChevronRight)`
+  color: var(--main-background-color);
+  background: var(--primary-font-color);
+  cursor: pointer;
+  opacity: 0.3;
+  margin: 0rem;
+  :hover {
+    opacity: 1;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin: 0rem 0.22rem;
+  }
 `;

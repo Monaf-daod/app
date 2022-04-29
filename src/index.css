@@ -19,6 +19,7 @@
   --main-background-color: rgb(235, 241, 244);
   --primary-font-color: #2e384d;
   --second-font-color: #8798b0;
+  --third-font-color: #2e384de6;
 }
 
 body {
@@ -89,3 +90,38 @@ a:hover {
     margin-top: 20vh;
   }
 }
+
+/* animation classes for works section*/
+.fadeRightText {
+  animation-name: fadeRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+@keyframes fadeRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.fadeLeftImage {
+  animation-name: fadeLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* end of animation classes for works section*/

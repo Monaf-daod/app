@@ -1,62 +1,95 @@
-import React, { Component } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import { Keyboard, EffectFade, Autoplay } from "swiper";
+import ImageLoader from "../Projects/ImageLoader";
+import WorkCardFullSlide from "./WorkCardFullSlide";
+// Import Swiper styles
+import "swiper/swiper-bundle.css";
 import {
   WorkSection,
-  Workicon,
   Worktitle,
-  Workpart,
-  Partdesc,
-  Parttitle,
-  Span,
-  Line,
+  WorkSwiperContainer,
+  WorkSliderButtonsContainer,
+  ChevronLeftButton,
+  ChevronRightButton,
 } from "./Style.js";
 
-class Work extends Component {
-  state = {
-    works: [],
+const Works = ({ workRef }) => {
+  const swiperWorksRef = useRef(null);
+  const [works, setWorks] = useState([]);
+
+  const goNext = (swiperRef) => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+  const goPrev = (swiperRef) => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+  const params = {
+    grabCursor: true,
+    slidesPerView: 1,
+    loop: true,
+    keyboard: {
+      enabled: true,
+    },
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+    modules: [EffectFade, Autoplay, Keyboard],
+    pagination: false,
+    navigation: false,
   };
 
-  componentDidMount() {
+  useEffect(() => {
     axios.get("js/data.json").then((res) => {
-      this.setState({
-        works: res.data.works,
-      });
+      setWorks(res.data.works);
     });
-  }
-  render() {
-    const { works } = this.state;
-    const { workRef } = this.props;
-    const workslist = works.map((item) => {
-      return (
-        <Workpart
-          first={item.id}
-          key={item.id}
-          // onClick={() =>
-          //   navigationHandlers.history.push({
-          //     state: item.category,
-          //     pathname: "/projects",
-          //   })
-          // }
+  }, []);
+
+  const workList = works.map((workItem) => (
+    <SwiperSlide key={workItem.id}>
+      {({ isActive }) => (
+        <WorkCardFullSlide
+          item={workItem}
+          applyAnimationOnImage={isActive}
+          applyAnimationOnText={isActive}
+        />
+      )}
+    </SwiperSlide>
+  ));
+
+  return (
+    <WorkSection ref={workRef} data-aos="zoom-in" data-aos-duration="1000">
+      <Worktitle>Projects</Worktitle>
+      <WorkSwiperContainer>
+        <Swiper
+          {...params}
+          effect="fade"
+          ref={swiperWorksRef}
+          style={{
+            position: "relative",
+          }}
         >
-          <Workicon className={item.icon_name}></Workicon>
-          <Parttitle>{item.title}</Parttitle>
-          <Line />
-          <Partdesc>{item.body}</Partdesc>
-        </Workpart>
-      );
-    });
+          <WorkSliderButtonsContainer>
+            <ChevronLeftButton
+              size={26}
+              onClick={() => goPrev(swiperWorksRef)}
+            />
+            <ChevronRightButton
+              size={26}
+              onClick={() => goNext(swiperWorksRef)}
+            />
+          </WorkSliderButtonsContainer>
+          {workList}
+        </Swiper>
+      </WorkSwiperContainer>
+    </WorkSection>
+  );
+};
 
-    return (
-      <WorkSection ref={workRef}>
-        <div className="container">
-          <Worktitle>
-            <Span>My</Span> Work
-          </Worktitle>
-          {workslist}
-        </div>
-      </WorkSection>
-    );
-  }
-}
-
-export default Work;
+export default Works;
