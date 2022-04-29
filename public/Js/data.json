@@ -1,27 +1,4 @@
 {
-  "works": [
-    {
-      "id": 1,
-      "icon_name": "icon fa fa-database fa-3x",
-      "title": "Systems",
-      "body": "See More",
-      "category": "system"
-    },
-    {
-      "id": 2,
-      "icon_name": "icon fa fa-shopping-cart fa-3x",
-      "title": "E-Commerce",
-      "body": "See More",
-      "category": "e-commerce"
-    },
-    {
-      "id": 3,
-      "icon_name": "icon fa fa-globe fa-3x",
-      "title": "Websites",
-      "body": "See More",
-      "category": "websites"
-    }
-  ],
   "portfolio": [
     {
       "id": 1,
@@ -76,89 +53,215 @@
       "body": "Social Pinterest"
     }
   ],
-  "profile": [
-    {
-      "name": "Monaf Daod",
-      "birthday": "25/11/1991",
-      "address": "Tartous",
-      "phone": "+964946431335",
-      "email": "monaf2daod@gmail.com",
-      "websit": "www.google.com"
-    }
-  ],
-  "skilles": [
+  "skills": [
     {
       "id": 1,
-      "title": "Bootstrap",
-      "process": "100%"
+      "title": "Java Script",
+      "image": "/images/techniques/javascript.svg"
     },
     {
       "id": 2,
-      "title": "Css3",
-      "process": "90%"
+      "title": "HTML5",
+      "image": "/images/techniques/html5.svg"
     },
     {
       "id": 3,
-      "title": "Photoshop",
-      "process": "80%"
+      "title": "Css3",
+      "image": "/images/techniques/css3.svg"
     },
     {
       "id": 4,
-      "title": "React",
-      "process": "75%"
+      "title": "React Js",
+      "image": "/images/techniques/react.svg"
+    },
+    {
+      "id": 5,
+      "title": "Next Js",
+      "image": "/images/techniques/nextjs.svg"
+    },
+    {
+      "id": 6,
+      "title": "Sass",
+      "image": "/images/techniques/sass.svg"
+    },
+    {
+      "id": 7,
+      "title": "Bootstrap",
+      "image": "/images/techniques/bootstrap.svg"
+    },
+    {
+      "id": 8,
+      "title": "Material Ui",
+      "image": "/images/techniques/materialui.svg"
+    },
+    {
+      "id": 9,
+      "title": "Tailwind",
+      "image": "/images/techniques/tailwind.svg"
     }
   ],
-  "projects": [
+  "works": [
     {
       "id": 1,
       "category": "system",
       "title": "Ajman Self Inspiction",
-      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
-      "images": []
+      "description": "this is description section this is description section this is description section",
+      "images": [
+        "/images/projects/AjmanSelfInspection/2.png",
+        "/images/projects/AjmanSelfInspection/3.png",
+        "/images/projects/AjmanSelfInspection/4.jpg",
+        "/images/projects/AjmanSelfInspection/5.png"
+      ],
+      "link": "https://Spare.ae",
+      "techniques": [
+        { "techName": "React JS", "icon": "/images/techniques/react.svg" },
+        { "techName": "Bootstarp", "icon": "/images/techniques/bootstrap.svg" },
+        { "techName": "Sass", "icon": "/images/techniques/sass.svg" },
+        { "techName": "Google Maps", "icon": "/images/techniques/google.svg" },
+        { "techName": ".Net Core", "icon": "/images/techniques/aspCore2.svg" },
+        { "techName": "SQL Server", "icon": "/images/techniques/mysql.svg" }
+      ]
     },
     {
       "id": 2,
       "category": "system",
       "title": "Meta CMS",
-      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
-      "images": []
+      "description": "this is description section this is description section this is description section",
+      "images": [
+        "/images/projects/MetaCms/1.png",
+        "/images/projects/MetaCms/2.jpg",
+        "/images/projects/MetaCms/3.jpg",
+        "/images/projects/MetaCms/4.jpg",
+        "/images/projects/MetaCms/5.jpg",
+        "/images/projects/MetaCms/6.jpg",
+        "/images/projects/MetaCms/7.jpg",
+        "/images/projects/MetaCms/8.png",
+        "/images/projects/MetaCms/9.jpg",
+        "/images/projects/MetaCms/10.jpg"
+      ],
+      "link": "https://Spare.ae",
+      "techniques": [
+        { "techName": "React JS", "icon": "/images/techniques/react.svg" },
+        { "techName": "Bootstarp", "icon": "/images/techniques/bootstrap.svg" },
+        { "techName": "Sass", "icon": "/images/techniques/sass.svg" },
+        { "techName": "Google Maps", "icon": "/images/techniques/google.svg" },
+        { "techName": ".Net Core", "icon": "/images/techniques/aspCore2.svg" },
+        { "techName": "SQL Server", "icon": "/images/techniques/mysql.svg" }
+      ]
     },
     {
       "id": 3,
       "category": "system",
-      "title": "Spare Parts admin Panel",
-      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
+      "title": "AE Spare Admin",
+      "description": "this is description section this is description section this is description section",
       "images": [
-        "/images/projects/sparePartsAdmin/1.png",
-        "/images/projects/sparePartsAdmin/2.png",
-        "/images/projects/sparePartsAdmin/3.png",
-        "/images/projects/sparePartsAdmin/4.png",
-        "/images/projects/sparePartsAdmin/5.png",
-        "/images/projects/sparePartsAdmin/6.jpeg",
-        "/images/projects/sparePartsAdmin/7.png",
-        "/images/projects/sparePartsAdmin/8.png",
-        "/images/projects/sparePartsAdmin/9.png",
-        "/images/projects/sparePartsAdmin/10.png",
-        "/images/projects/sparePartsAdmin/11.png",
-        "/images/projects/sparePartsAdmin/12.png",
-        "/images/projects/sparePartsAdmin/13.png",
-        "/images/projects/sparePartsAdmin/14.png",
-        "/images/projects/sparePartsAdmin/15.png"
+        "/images/projects/sparePartsAdmin/1.jpg",
+        "/images/projects/sparePartsAdmin/2.jpg",
+        "/images/projects/sparePartsAdmin/3.jpg",
+        "/images/projects/sparePartsAdmin/4.jpg",
+        "/images/projects/sparePartsAdmin/5.jpg",
+        "/images/projects/sparePartsAdmin/6.jpg",
+        "/images/projects/sparePartsAdmin/7.jpg",
+        "/images/projects/sparePartsAdmin/8.jpg",
+        "/images/projects/sparePartsAdmin/9.jpg",
+        "/images/projects/sparePartsAdmin/10.jpg",
+        "/images/projects/sparePartsAdmin/11.jpg",
+        "/images/projects/sparePartsAdmin/12.jpg",
+        "/images/projects/sparePartsAdmin/13.jpg",
+        "/images/projects/sparePartsAdmin/14.jpg"
+      ],
+      "link": "https://Spare.ae",
+      "techniques": [
+        { "techName": "React JS", "icon": "/images/techniques/react.svg" },
+        { "techName": "Bootstarp", "icon": "/images/techniques/bootstrap.svg" },
+        {
+          "techName": "Firebase Notifications",
+          "icon": "/images/techniques/firebase.svg"
+        },
+        { "techName": "PHP", "icon": "/images/techniques/php.svg" },
+        { "techName": "MySQL", "icon": "/images/techniques/mysql.svg" }
       ]
     },
     {
       "id": 4,
       "category": "e-commerce",
       "title": "AE Spare Parts",
-      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
-      "images": []
+      "description": "this is description section this is description section this is description section",
+      "images": [
+        "/images/projects/SparePartsWeb/2.jpg",
+        "/images/projects/SparePartsWeb/3.png",
+        "/images/projects/SparePartsWeb/4.png",
+        "/images/projects/SparePartsWeb/5.png",
+        "/images/projects/SparePartsWeb/6.png",
+        "/images/projects/SparePartsWeb/7.jpg",
+        "/images/projects/SparePartsWeb/8.png",
+        "/images/projects/SparePartsWeb/9.png",
+        "/images/projects/SparePartsWeb/10.png"
+      ],
+      "link": "https://Spare.ae",
+      "techniques": [
+        { "techName": "React JS", "icon": "/images/techniques/react.svg" },
+        {
+          "techName": "Bootstrap",
+          "icon": "/images/techniques/bootstrap.svg"
+        },
+        {
+          "techName": "Firebase Notifications",
+          "icon": "/images/techniques/firebase.svg"
+        },
+        {
+          "techName": "FaceBook API",
+          "icon": "/images/techniques/facebook.svg"
+        },
+        { "techName": "Google API", "icon": "/images/techniques/google.svg" },
+        { "techName": "Google Maps", "icon": "/images/techniques/google.svg" },
+        { "techName": "PHP", "icon": "/images/techniques/php.svg" },
+        { "techName": "My SQL", "icon": "/images/techniques/mysql.svg" }
+      ]
     },
     {
       "id": 5,
       "category": "websites",
       "title": "Meta Website",
-      "mainCover": "/images/projects/sparePartsWeb/login.jpeg",
-      "images": []
+      "description": "this is description section this is description section this is description section",
+      "images": [],
+      "link": "https://Spare.ae",
+      "techniques": [
+        { "techName": "Next JS", "icon": "/images/techniques/nextjs.svg" },
+        {
+          "techName": "Material Ui",
+          "icon": "/images/techniques/materialui.svg"
+        },
+        { "techName": ".Net Core", "icon": "/images/techniques/php.svg" },
+        { "techName": "SQl Server", "icon": "/images/techniques/mysql.svg" }
+      ]
+    },
+    {
+      "id": 6,
+      "category": "websites",
+      "title": "Safe One Group",
+      "description": "this is description section this is description section this is description section",
+      "images": [
+        "/images/projects/SafeOneGroup/1.png",
+        "/images/projects/SafeOneGroup/2.png",
+        "/images/projects/SafeOneGroup/3.png",
+        "/images/projects/SafeOneGroup/4.png",
+        "/images/projects/SafeOneGroup/5.png",
+        "/images/projects/SafeOneGroup/6.png",
+        "/images/projects/SafeOneGroup/7.png",
+        "/images/projects/SafeOneGroup/8.png",
+        "/images/projects/SafeOneGroup/9.png"
+      ],
+      "link": "https://safeonegroup.ae/",
+      "techniques": [
+        { "techName": "Next JS", "icon": "/images/techniques/nextjs.svg" },
+        {
+          "techName": "Material Ui",
+          "icon": "/images/techniques/materialui.svg"
+        },
+        { "techName": ".Net Core", "icon": "/images/techniques/php.svg" },
+        { "techName": "SQl Server", "icon": "/images/techniques/mysql.svg" }
+      ]
     }
   ]
 }
