@@ -107,12 +107,23 @@
       "title": "Ajman Self Inspiction",
       "description": "this is description section this is description section this is description section",
       "images": [
+        "/images/projects/AjmanSelfInspection/1.png",
         "/images/projects/AjmanSelfInspection/2.png",
         "/images/projects/AjmanSelfInspection/3.png",
         "/images/projects/AjmanSelfInspection/4.jpg",
-        "/images/projects/AjmanSelfInspection/5.png"
+        "/images/projects/AjmanSelfInspection/5.png",
+        "/images/projects/AjmanSelfInspection/6.png",
+        "/images/projects/AjmanSelfInspection/7.png",
+        "/images/projects/AjmanSelfInspection/8.png",
+        "/images/projects/AjmanSelfInspection/9.png",
+        "/images/projects/AjmanSelfInspection/10.png",
+        "/images/projects/AjmanSelfInspection/11.png",
+        "/images/projects/AjmanSelfInspection/12.png",
+        "/images/projects/AjmanSelfInspection/13.png",
+        "/images/projects/AjmanSelfInspection/14.png",
+        "/images/projects/AjmanSelfInspection/15.png"
       ],
-      "link": "https://Spare.ae",
+      "link": "http://62.171.156.160:1096/login",
       "techniques": [
         { "techName": "React JS", "icon": "/images/techniques/react.svg" },
         { "techName": "Bootstarp", "icon": "/images/techniques/bootstrap.svg" },
@@ -155,7 +166,7 @@
       "title": "AE Spare Admin",
       "description": "this is description section this is description section this is description section",
       "images": [
-        "/images/projects/sparePartsAdmin/1.jpg",
+        "/images/projects/sparePartsAdmin/1.png",
         "/images/projects/sparePartsAdmin/2.jpg",
         "/images/projects/sparePartsAdmin/3.jpg",
         "/images/projects/sparePartsAdmin/4.jpg",
@@ -188,15 +199,11 @@
       "title": "AE Spare Parts",
       "description": "this is description section this is description section this is description section",
       "images": [
-        "/images/projects/SparePartsWeb/2.jpg",
+        "/images/projects/SparePartsWeb/1.png",
+        "/images/projects/SparePartsWeb/2.png",
         "/images/projects/SparePartsWeb/3.png",
         "/images/projects/SparePartsWeb/4.png",
-        "/images/projects/SparePartsWeb/5.png",
-        "/images/projects/SparePartsWeb/6.png",
-        "/images/projects/SparePartsWeb/7.jpg",
-        "/images/projects/SparePartsWeb/8.png",
-        "/images/projects/SparePartsWeb/9.png",
-        "/images/projects/SparePartsWeb/10.png"
+        "/images/projects/SparePartsWeb/5.png"
       ],
       "link": "https://Spare.ae",
       "techniques": [
@@ -224,8 +231,25 @@
       "category": "websites",
       "title": "Meta Website",
       "description": "this is description section this is description section this is description section",
-      "images": [],
-      "link": "https://Spare.ae",
+      "images": [
+        "/images/projects/MetaWebsite/1.png",
+        "/images/projects/MetaWebsite/2.png",
+        "/images/projects/MetaWebsite/3.png",
+        "/images/projects/MetaWebsite/4.png",
+        "/images/projects/MetaWebsite/5.png",
+        "/images/projects/MetaWebsite/6.png",
+        "/images/projects/MetaWebsite/7.png",
+        "/images/projects/MetaWebsite/8.png",
+        "/images/projects/MetaWebsite/9.png",
+        "/images/projects/MetaWebsite/10.png",
+        "/images/projects/MetaWebsite/11.png",
+        "/images/projects/MetaWebsite/12.png",
+        "/images/projects/MetaWebsite/13.png",
+        "/images/projects/MetaWebsite/14.png",
+        "/images/projects/MetaWebsite/15.png",
+        "/images/projects/MetaWebsite/16.png"
+      ],
+      "link": "https://foliometasolweb.meta-itech.com/",
       "techniques": [
         { "techName": "Next JS", "icon": "/images/techniques/nextjs.svg" },
         {
