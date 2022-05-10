@@ -1,28 +1,24 @@
 import React from "react";
+import Particles from "react-tsparticles";
 import {
   HomeInformation,
   HomeInfo,
   HomeSection,
   HomeTitle,
-  Homedesc,
   HomeBtn,
-  Span,
   Avatar,
+  OverLay,
 } from "./Style.js";
 import avatar from "../../assets/profile/avatar1.jpg";
 
 const Home = ({ aboutSectionRef }) => {
   return (
     <HomeSection>
+      <OverLay />
       <HomeInformation>
         {/* <Avatar src={avatar} /> */}
         <HomeTitle>Monaf Daod</HomeTitle>
         <HomeInfo>Front End Developer</HomeInfo>
-        {/* <Homedesc>
-            I am a professional <Span>Front End Developer</Span>. Proficient in
-            building and developing modern and responsive websites in the
-            software industry. Let us work together. Thank you.
-          </Homedesc> */}
         <HomeBtn
           onClick={() =>
             window.scrollTo({
@@ -34,6 +30,47 @@ const Home = ({ aboutSectionRef }) => {
           Let's Begin
         </HomeBtn>
       </HomeInformation>
+      <Particles
+        options={{
+          style: {
+            position: "absolute",
+            opacity: "0.8",
+          },
+          fpsLimit: 60,
+          interactivity: {
+            events: {
+              onHover: {
+                enable: true,
+                mode: "bubble",
+              },
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+            },
+            modes: {
+              bubble: {
+                opacity: 0.8,
+                size: 10,
+                color: {
+                  value: "#C2D7ED",
+                },
+              },
+            },
+          },
+          particles: {
+            links: {
+              enable: true,
+            },
+            move: {
+              enable: true,
+            },
+            size: {
+              value: 2,
+            },
+          },
+        }}
+      />
     </HomeSection>
   );
 };
