@@ -10,6 +10,7 @@ import {
   OverLay,
 } from "./Style.js";
 // import avatar from "../../assets/profile/avatar1.jpg";
+import Typist from "react-text-typist";
 
 const Home = ({ aboutSectionRef }) => {
   return (
@@ -18,7 +19,14 @@ const Home = ({ aboutSectionRef }) => {
       <HomeInformation>
         {/* <Avatar src={avatar} /> */}
         <HomeTitle>Monaf Daod</HomeTitle>
-        <HomeInfo>Front End Developer</HomeInfo>
+        <HomeInfo>
+          <Typist
+            sentences={["Front End Developer", "React Js & Next Js"]}
+            cursorColor="var(--primary-font-color)"
+            typingSpeed={100}
+            loop={true}
+          />
+        </HomeInfo>
         <HomeBtn
           onClick={() =>
             window.scrollTo({
