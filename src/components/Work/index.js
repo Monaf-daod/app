@@ -36,8 +36,8 @@ const Works = ({ workRef }) => {
       enabled: true,
     },
     autoplay: {
-      delay: 10000,
-      disableOnInteraction: false,
+      delay: 15000,
+      disableOnInteraction: true,
     },
     modules: [EffectFade, Autoplay, Keyboard],
     pagination: false,
@@ -63,7 +63,7 @@ const Works = ({ workRef }) => {
   ));
 
   return (
-    <WorkSection ref={workRef} data-aos="zoom-in" data-aos-duration="1000">
+    <WorkSection ref={workRef} data-aos="fade-right">
       <Worktitle>Projects</Worktitle>
       <WorkSwiperContainer>
         <Swiper

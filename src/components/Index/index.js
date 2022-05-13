@@ -5,7 +5,7 @@ import Home from "./../Home";
 import Skills from "../Skills";
 import Work from "./../Work";
 import Socialmedia from "./../Socialmedia";
-// import Footer from "./../Footer";
+import Footer from "./../Footer";
 import { MainContainer } from "./style";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,7 +40,7 @@ const Index = () => {
       <Skills skillsRef={SKILLS_SECTION} />
       <Work workRef={WORK_SECTION} />
       <Socialmedia contactRef={CONTACT_SECTION} />
-      {/* <Footer /> */}
+      <Footer />
     </MainContainer>
   );
 };
