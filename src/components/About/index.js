@@ -2,35 +2,25 @@ import React from "react";
 import {
   AboutSection,
   Aboutinfo,
-  AboutInfoTitle,
-  AboutInfoTitleSpan,
+  AboutSectionOverlay,
   AboutInfoDir,
   AboutInfoDesc,
-  AboutInfoDesca,
 } from "./Style.js";
 
 const About = ({ aboutRef }) => {
   return (
     <AboutSection ref={aboutRef}>
-      <div className="container">
-        <Aboutinfo>
-          <AboutInfoTitle>
-            <AboutInfoTitleSpan>This is</AboutInfoTitleSpan> Me
-          </AboutInfoTitle>
-          <AboutInfoDir>Creative Director</AboutInfoDir>
-          <AboutInfoDesc>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est{" "}
-            <AboutInfoDesca href="#">explicabo</AboutInfoDesca> maxime quibusdam
-            quaerat nihil aliquid aperiam deleniti, repellendus dolorum.
-            Possimus nisi cupiditate ad veritatis?
-          </AboutInfoDesc>
-          <AboutInfoDesc>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim est
-            explicabo maxime quibusdam quaerat nihil aliquid aperiam deleniti,
-            repellendus dolorum. Possimus nisi cupiditate ad veritatis?
-          </AboutInfoDesc>
-        </Aboutinfo>
-      </div>
+      <AboutSectionOverlay />
+      <Aboutinfo data-aos="zoom-out">
+        <AboutInfoDir data-aos="fade-left" data-aos-duration="1000">
+          Creative Front End Developer
+        </AboutInfoDir>
+        <AboutInfoDesc data-aos="fade-right" data-aos-duration="1000">
+          I am a professional ,Front End Developer Proficient in building and
+          developing modern and responsive websites in the Software industry.
+          Let us work together.
+        </AboutInfoDesc>
+      </Aboutinfo>
     </AboutSection>
   );
 };
