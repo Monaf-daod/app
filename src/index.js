@@ -1,7 +1,29 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
+import ReactLoading from "react-loading";
+import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const LoadingSpinner = ({ type, color }) => (
+  <div
+    style={{
+      width: "100%",
+      height: "100vh",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    <ReactLoading type={type} color={color} height={400} width={300} />
+  </div>
+);
+
+ReactDOM.render(
+  <Suspense
+    fallback={<LoadingSpinner color="var(--primary-font-color)" type="bars" />}
+  >
+    <App />
+  </Suspense>,
+  document.getElementById("root")
+);
