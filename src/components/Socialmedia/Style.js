@@ -1,46 +1,50 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
+export const SocialMedia = styled.div`
+  width: 100%;
+  height: 100vh;
+  padding-top: 5rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
+  align-items: center;
+`;
 
-export const SocialMedia =styled.div`
-    height: auto;
-    overflow: hidden
-`
+export const Socialmediasocial = styled.div`
+  width: 33.33%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  background: ${(props) => (props.info === 1 ? "#3b5998" : "")};
+  background: ${(props) => (props.info === 2 ? "#bcbcbc" : "")};
+  background: ${(props) => (props.info === 3 ? "#cc2127" : "")};
+  background: ${(props) => (props.info === 4 ? "#25D366" : "")};
+  background: ${(props) => (props.info === 5 ? "#229ED9a1" : "")};
 
-export const Socialmediasocial =styled.div`
-    width: 33.33%;
-    float: left;
-    box-sizing: border-box;
-    padding: 100px 0 100px 60px;
-    background: ${props => props.info === 1 ? '#3b5998' : ''};
-    background: ${props => props.info === 2 ? '#498cbf' : ''};
-    background: ${props => props.info === 3 ? '#cc2127' : ''}
-`
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 50%;
+    height: 9rem;
+  }
+`;
 
-export const Socialmediasocialicon = styled.i`
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    text-align: center;
-    line-height: 50px;
-    color: #888;
-    float: left;
-    margin-right: 10px;
-    margin-top :25px;
-`
+export const Socialmediasocialicon = styled.img`
+  width: 3rem;
+  height: 3rem;
+`;
 
-export const SocialmediasocialP =styled.p`
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 20px;
-    color: #fff
-`
+export const SocialmediasocialP = styled.p`
+  font-weight: normal;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+`;
 
-
-export const SocialmediasocialpSpan1 =styled.span`
-    display: block;
-    margin-bottom: 8px
-`
-
-export const SocialmediasocialpSpan2 =styled.span`
-    font-weight: normal
-`
+export const SocialmediasocialpSpan = styled.span`
+  display: block;
+  font-weight: normal;
+`;

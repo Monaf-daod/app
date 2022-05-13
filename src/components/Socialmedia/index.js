@@ -1,44 +1,37 @@
-import React ,{Component} from 'react'
-import axios from 'axios'
-import {SocialMedia, Socialmediasocial, Socialmediasocialicon, SocialmediasocialP, SocialmediasocialpSpan1, SocialmediasocialpSpan2 } from  './Style.js'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import {
+  SocialMedia,
+  Socialmediasocial,
+  Socialmediasocialicon,
+  SocialmediasocialP,
+  SocialmediasocialpSpan,
+} from "./Style.js";
 
-class  Socialmedia extends Component {
+const Socialmedia = ({ contactRef }) => {
+  const [social, setSocial] = useState([]);
 
-    state= {
-        social :[]
-    }
+  useEffect(() => {
+    axios.get("js/data.json").then((res) => {
+      setSocial(res.data.social);
+    });
+  }, []);
 
-    componentDidMount () {
-
-        axios.get('js/data.json').then ( res => {
-            this.setState({
-                social :res.data.social
-            })
-        })
-    }
-
-    
-    render() {
-
-        const {social} = this.state;
-        const socialList = social.map( item => {
-            return (
-                <Socialmediasocial info={item.id} key={item.id}>
-                    <Socialmediasocialicon className={item.icon}></Socialmediasocialicon>
-                    <SocialmediasocialP>
-                        <SocialmediasocialpSpan1>{item.title}</SocialmediasocialpSpan1>
-                        <SocialmediasocialpSpan2>{item.body}</SocialmediasocialpSpan2>
-                    </SocialmediasocialP>
-                </Socialmediasocial>
-            )
-        })
-        return (
-        
-            <SocialMedia>
-                    {socialList}
-            </SocialMedia>
-                )
-    }
-}
+  const socialList = social.map((item) => {
+    return (
+      <Socialmediasocial
+        info={item.id}
+        key={item.id}
+        onClick={() => window.open(item.link, item.flag)}
+      >
+        <Socialmediasocialicon src={item.icon} />
+        <SocialmediasocialP>
+          <SocialmediasocialpSpan>{item.body}</SocialmediasocialpSpan>
+        </SocialmediasocialP>
+      </Socialmediasocial>
+    );
+  });
+  return <SocialMedia ref={contactRef}>{socialList}</SocialMedia>;
+};
 
 export default Socialmedia;

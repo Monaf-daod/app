@@ -36,21 +36,43 @@
   "social": [
     {
       "id": 1,
-      "icon": "icon fa fa-facebook fa-lg",
+      "icon": "/images/techniques/linkdin.svg",
       "title": "Follow Me on",
-      "body": "Social Facebook"
+      "body": "Linkedin",
+      "link": "https://www.linkedin.com/in/monaf-daod-877281220",
+      "flag": "_blank"
     },
     {
       "id": 2,
-      "icon": "icon fa fa-twitter fa-lg",
-      "title": "Tweet Me on",
-      "body": "Social twitter"
+      "icon": "/images/techniques/github.svg",
+      "title": "Github",
+      "body": "Github",
+      "link": "https://github.com/Monaf-daod",
+      "flag": "_blank"
     },
     {
       "id": 3,
-      "icon": "icon fa fa-pinterest fa-lg",
-      "title": "Pin Me on",
-      "body": "Social Pinterest"
+      "icon": "/images/techniques/gmail.svg",
+      "title": "Send Email",
+      "body": "Gmail",
+      "link": "mailto:monaf2daod.gmail.com",
+      "flag": "_self"
+    },
+    {
+      "id": 4,
+      "icon": "/images/techniques/whatsapp.svg",
+      "title": "Send Message",
+      "body": "WhatsApp",
+      "link": "https://wa.me/+963936431335",
+      "flag": "_blank"
+    },
+    {
+      "id": 5,
+      "icon": "/images/techniques/telegram.svg",
+      "title": "Send Message",
+      "body": "Telegram",
+      "link": "https://telegram.me/+963936431335",
+      "flag": "_blank"
     }
   ],
   "skills": [
