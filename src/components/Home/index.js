@@ -6,10 +6,10 @@ import {
   HomeSection,
   HomeTitle,
   HomeBtn,
-  Avatar,
+  // Avatar,
   OverLay,
 } from "./Style.js";
-import avatar from "../../assets/profile/avatar1.jpg";
+// import avatar from "../../assets/profile/avatar1.jpg";
 
 const Home = ({ aboutSectionRef }) => {
   return (

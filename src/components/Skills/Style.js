@@ -29,7 +29,7 @@ export const SkillFirstColumnItem = styled.div`
   height: 140px;
   margin: 0rem 0.5rem;
   align-self: ${(props) =>
-    props.position == 0 || props.position == 2 ? "flex-end" : "flex-start"};
+    props.position === 0 || props.position === 2 ? "flex-end" : "flex-start"};
   @media (min-width: 320px) and (max-width: 767px) {
     align-self: center;
   }
@@ -60,7 +60,7 @@ export const SkillThirdColumnItem = styled.div`
   height: 140px;
   margin: 0rem 0.5rem;
   align-self: ${(props) =>
-    props.position == 0 || props.position == 2 ? "flex-start" : "flex-end"};
+    props.position === 0 || props.position === 2 ? "flex-start" : "flex-end"};
   @media (min-width: 320px) and (max-width: 767px) {
     align-self: center;
   }
