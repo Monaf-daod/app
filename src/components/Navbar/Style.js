@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const NavbarSection = styled.div`
   width: 100%;
-  padding: 15px 10px;
+  padding: 15px 0px;
+  padding-left: 10rem;
   overflow: hidden;
   color: ${(props) =>
     props.backgroundVisible ? "var(--primary-font-color)" : "#fff"};
@@ -16,7 +17,7 @@ export const NavbarSection = styled.div`
   justify-content: space-between;
   z-index: 9999;
   @media (min-width: 320px) and (max-width: 767px) {
-    background: transparent;
+    padding-left: 0.7rem;
   }
 `;
 
@@ -24,7 +25,7 @@ export const UlList = styled.div`
   width: 45%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   @media (min-width: 320px) and (max-width: 767px) {
     display: none;
   }

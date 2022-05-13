@@ -11,7 +11,8 @@ import {
 import MenuIcon from "../../assets/icons/menu.svg";
 
 const Navbar = ({ sections }) => {
-  const [ABOUT_SECTION, WORK_SECTION, CONTACT_SECTION] = sections;
+  const [ABOUT_SECTION, WORK_SECTION, CONTACT_SECTION, SKILLS_SECTION] =
+    sections;
   const [backgroundVisiblity, setBackgroundVisibility] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -64,6 +65,16 @@ const Navbar = ({ sections }) => {
         <ListItem
           onClick={() =>
             window.scrollTo({
+              top: SKILLS_SECTION.current.offsetTop,
+              behavior: "smooth",
+            })
+          }
+        >
+          Skills
+        </ListItem>
+        <ListItem
+          onClick={() =>
+            window.scrollTo({
               top: WORK_SECTION.current.offsetTop,
               behavior: "smooth",
             })
@@ -95,6 +106,17 @@ const Navbar = ({ sections }) => {
             }}
           >
             About
+          </VerticalListItem>
+          <VerticalListItem
+            onClick={() => {
+              window.scrollTo({
+                top: SKILLS_SECTION.current.offsetTop,
+                behavior: "smooth",
+              });
+              toggle();
+            }}
+          >
+            Skills
           </VerticalListItem>
           <VerticalListItem
             onClick={() => {
