@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Particles from "react-tsparticles";
+import ParticleEffectButton from "react-particle-effect-button";
 import {
   HomeInformation,
   HomeInfo,
@@ -13,6 +14,17 @@ import {
 import Typist from "react-text-typist";
 
 const Home = ({ aboutSectionRef }) => {
+  const [ishidden, setIsHidden] = useState(false);
+
+  const handleScroll = () => {
+    setIsHidden(true);
+    setTimeout(() => {
+      window.scrollTo({
+        top: aboutSectionRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }, 1000);
+  };
   return (
     <HomeSection>
       <OverLay />
@@ -27,16 +39,13 @@ const Home = ({ aboutSectionRef }) => {
             loop={true}
           />
         </HomeInfo>
-        <HomeBtn
-          onClick={() =>
-            window.scrollTo({
-              top: aboutSectionRef.current.offsetTop,
-              behavior: "smooth",
-            })
-          }
+        <ParticleEffectButton
+          color="var(--primary-font-color)"
+          hidden={ishidden}
+          onComplete={() => setIsHidden(false)}
         >
-          Let's Begin
-        </HomeBtn>
+          <HomeBtn onClick={handleScroll}>Let's Begin</HomeBtn>
+        </ParticleEffectButton>
       </HomeInformation>
       <Particles
         options={{
