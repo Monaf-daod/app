@@ -64,8 +64,8 @@ export const TechniquesIconsContainer = styled.div`
   }
 `;
 export const TechniqueImage = styled.img`
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 35px;
+  height: 35px;
   margin: 0.3rem;
 `;
 export const Partdesc = styled.p`
@@ -161,6 +161,7 @@ export const WorkInnerImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: scale-down;
+  object-position: center;
 `;
 export const ChevronLeftButton = styled(ChevronLeft)`
   color: var(--main-background-color);

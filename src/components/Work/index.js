@@ -2,10 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import { Keyboard, EffectFade, Autoplay } from "swiper";
-import ImageLoader from "../Projects/ImageLoader";
 import WorkCardFullSlide from "./WorkCardFullSlide";
 // Import Swiper styles
-import "swiper/swiper-bundle.css";
 import {
   WorkSection,
   Worktitle,
@@ -14,6 +12,7 @@ import {
   ChevronLeftButton,
   ChevronRightButton,
 } from "./Style.js";
+import "swiper/swiper-bundle.css";
 
 const Works = ({ workRef }) => {
   const swiperWorksRef = useRef(null);
