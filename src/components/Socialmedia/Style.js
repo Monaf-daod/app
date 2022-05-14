@@ -20,7 +20,7 @@ export const Socialmediasocial = styled.div`
   align-items: center;
   padding: 2rem;
   cursor: pointer;
-  background: ${(props) => (props.info === 1 ? "#3b5998" : "")};
+  background: ${(props) => (props.info === 1 ? "#0274b3" : "")};
   background: ${(props) => (props.info === 2 ? "#bcbcbc" : "")};
   background: ${(props) => (props.info === 3 ? "#cc2127" : "")};
   background: ${(props) => (props.info === 4 ? "#25D366" : "")};

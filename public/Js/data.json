@@ -1,42 +1,8 @@
 {
-  "portfolio": [
-    {
-      "id": 1,
-      "image": "/images/portfolio-img1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/portfolio-img2.jpg"
-    },
-    {
-      "id": 3,
-      "image": "/images/portfolio-img3.jpg"
-    },
-    {
-      "id": 4,
-      "image": "/images/portfolio-img4.jpg"
-    },
-    {
-      "id": 5,
-      "image": "/images/portfolio-img5.jpg"
-    },
-    {
-      "id": 6,
-      "image": "/images/portfolio-img6.jpg"
-    },
-    {
-      "id": 7,
-      "image": "/images/portfolio-img7.jpg"
-    },
-    {
-      "id": 8,
-      "image": "/images/portfolio-img8.jpg"
-    }
-  ],
   "social": [
     {
       "id": 1,
-      "icon": "/images/techniques/linkdin.svg",
+      "icon": "/images/techniques/linkedIn.png",
       "title": "Follow Me on",
       "body": "Linkedin",
       "link": "https://www.linkedin.com/in/monaf-daod-877281220",
@@ -52,7 +18,7 @@
     },
     {
       "id": 3,
-      "icon": "/images/techniques/gmail.svg",
+      "icon": "/images/techniques/gmail.png",
       "title": "Send Email",
       "body": "Gmail",
       "link": "mailto:monaf2daod.gmail.com",
@@ -129,21 +95,21 @@
       "title": "Ajman Self Inspiction",
       "description": "Smart system to make inspection process faster, more efficient, and smarter using artificial intelligence.",
       "images": [
-        "/images/projects/AjmanSelfInspection/1.png",
-        "/images/projects/AjmanSelfInspection/2.png",
-        "/images/projects/AjmanSelfInspection/3.png",
-        "/images/projects/AjmanSelfInspection/4.png",
-        "/images/projects/AjmanSelfInspection/5.png",
-        "/images/projects/AjmanSelfInspection/6.png",
-        "/images/projects/AjmanSelfInspection/7.png",
-        "/images/projects/AjmanSelfInspection/8.png",
-        "/images/projects/AjmanSelfInspection/9.png",
-        "/images/projects/AjmanSelfInspection/10.png",
-        "/images/projects/AjmanSelfInspection/11.png",
-        "/images/projects/AjmanSelfInspection/12.png",
-        "/images/projects/AjmanSelfInspection/13.png",
-        "/images/projects/AjmanSelfInspection/14.png",
-        "/images/projects/AjmanSelfInspection/15.png"
+        "/images/projects/AjmanSelfInspection/1.jpg",
+        "/images/projects/AjmanSelfInspection/2.jpg",
+        "/images/projects/AjmanSelfInspection/3.jpg",
+        "/images/projects/AjmanSelfInspection/4.jpg",
+        "/images/projects/AjmanSelfInspection/5.jpg",
+        "/images/projects/AjmanSelfInspection/6.jpg",
+        "/images/projects/AjmanSelfInspection/7.jpg",
+        "/images/projects/AjmanSelfInspection/8.jpg",
+        "/images/projects/AjmanSelfInspection/9.jpg",
+        "/images/projects/AjmanSelfInspection/10.jpg",
+        "/images/projects/AjmanSelfInspection/11.jpg",
+        "/images/projects/AjmanSelfInspection/12.jpg",
+        "/images/projects/AjmanSelfInspection/13.jpg",
+        "/images/projects/AjmanSelfInspection/14.jpg",
+        "/images/projects/AjmanSelfInspection/15.jpg"
       ],
       "link": "http://62.171.156.160:1096/login",
       "techniques": [
@@ -159,14 +125,14 @@
       "title": "Meta CMS",
       "description": "It offers awareness and recognition of your brand to the customers for an enhanced communication.",
       "images": [
-        "/images/projects/MetaCms/1.png",
+        "/images/projects/MetaCms/1.jpg",
         "/images/projects/MetaCms/2.jpg",
         "/images/projects/MetaCms/3.jpg",
         "/images/projects/MetaCms/4.jpg",
         "/images/projects/MetaCms/5.jpg",
         "/images/projects/MetaCms/6.jpg",
         "/images/projects/MetaCms/7.jpg",
-        "/images/projects/MetaCms/8.png",
+        "/images/projects/MetaCms/8.jpg",
         "/images/projects/MetaCms/9.jpg",
         "/images/projects/MetaCms/10.jpg"
       ],
@@ -184,7 +150,7 @@
       "title": "AE Spare Admin",
       "description": "this is description section this is description section this is description section",
       "images": [
-        "/images/projects/sparePartsAdmin/1.png",
+        "/images/projects/sparePartsAdmin/1.jpg",
         "/images/projects/sparePartsAdmin/2.jpg",
         "/images/projects/sparePartsAdmin/3.jpg",
         "/images/projects/sparePartsAdmin/4.jpg",
@@ -197,7 +163,8 @@
         "/images/projects/sparePartsAdmin/11.jpg",
         "/images/projects/sparePartsAdmin/12.jpg",
         "/images/projects/sparePartsAdmin/13.jpg",
-        "/images/projects/sparePartsAdmin/14.jpg"
+        "/images/projects/sparePartsAdmin/14.jpg",
+        "/images/projects/sparePartsAdmin/15.jpg"
       ],
       "link": "https://Spare.ae",
       "techniques": [
@@ -215,11 +182,11 @@
       "title": "AE Spare Parts",
       "description": "E-Commerce platform ,It offers customers a variety of shopping car spare parts at the best prices in the region.",
       "images": [
-        "/images/projects/SparePartsWeb/1.png",
-        "/images/projects/SparePartsWeb/2.png",
-        "/images/projects/SparePartsWeb/3.png",
-        "/images/projects/SparePartsWeb/4.png",
-        "/images/projects/SparePartsWeb/5.png"
+        "/images/projects/SparePartsWeb/1.jpg",
+        "/images/projects/SparePartsWeb/2.jpg",
+        "/images/projects/SparePartsWeb/3.jpg",
+        "/images/projects/SparePartsWeb/4.jpg",
+        "/images/projects/SparePartsWeb/5.jpg"
       ],
       "link": "https://Spare.ae",
       "techniques": [
@@ -246,22 +213,22 @@
       "title": "Meta Website",
       "description": "Meta Solutions Official website. Portfolio for Meta company to show its services and projects",
       "images": [
-        "/images/projects/MetaWebsite/1.png",
-        "/images/projects/MetaWebsite/2.png",
-        "/images/projects/MetaWebsite/3.png",
-        "/images/projects/MetaWebsite/4.png",
-        "/images/projects/MetaWebsite/5.png",
-        "/images/projects/MetaWebsite/6.png",
-        "/images/projects/MetaWebsite/7.png",
-        "/images/projects/MetaWebsite/8.png",
-        "/images/projects/MetaWebsite/9.png",
-        "/images/projects/MetaWebsite/10.png",
-        "/images/projects/MetaWebsite/11.png",
-        "/images/projects/MetaWebsite/12.png",
-        "/images/projects/MetaWebsite/13.png",
-        "/images/projects/MetaWebsite/14.png",
-        "/images/projects/MetaWebsite/15.png",
-        "/images/projects/MetaWebsite/16.png"
+        "/images/projects/MetaWebsite/1.jpg",
+        "/images/projects/MetaWebsite/2.jpg",
+        "/images/projects/MetaWebsite/3.jpg",
+        "/images/projects/MetaWebsite/4.jpg",
+        "/images/projects/MetaWebsite/5.jpg",
+        "/images/projects/MetaWebsite/6.jpg",
+        "/images/projects/MetaWebsite/7.jpg",
+        "/images/projects/MetaWebsite/8.jpg",
+        "/images/projects/MetaWebsite/9.jpg",
+        "/images/projects/MetaWebsite/10.jpg",
+        "/images/projects/MetaWebsite/11.jpg",
+        "/images/projects/MetaWebsite/12.jpg",
+        "/images/projects/MetaWebsite/13.jpg",
+        "/images/projects/MetaWebsite/14.jpg",
+        "/images/projects/MetaWebsite/15.jpg",
+        "/images/projects/MetaWebsite/16.jpg"
       ],
       "link": "https://foliometasolweb.meta-itech.com/",
       "techniques": [
@@ -278,15 +245,15 @@
       "title": "Safe One Group",
       "description": "Safe One Group website. Company for Building & Constructions based in UAE, Abu Dhabi Emirate",
       "images": [
-        "/images/projects/SafeOneGroup/1.png",
-        "/images/projects/SafeOneGroup/2.png",
-        "/images/projects/SafeOneGroup/3.png",
-        "/images/projects/SafeOneGroup/4.png",
-        "/images/projects/SafeOneGroup/5.png",
-        "/images/projects/SafeOneGroup/6.png",
-        "/images/projects/SafeOneGroup/7.png",
-        "/images/projects/SafeOneGroup/8.png",
-        "/images/projects/SafeOneGroup/9.png"
+        "/images/projects/SafeOneGroup/1.jpg",
+        "/images/projects/SafeOneGroup/2.jpg",
+        "/images/projects/SafeOneGroup/3.jpg",
+        "/images/projects/SafeOneGroup/4.jpg",
+        "/images/projects/SafeOneGroup/5.jpg",
+        "/images/projects/SafeOneGroup/6.jpg",
+        "/images/projects/SafeOneGroup/7.jpg",
+        "/images/projects/SafeOneGroup/8.jpg",
+        "/images/projects/SafeOneGroup/9.jpg"
       ],
       "link": "https://safeonegroup.ae/",
       "techniques": [
