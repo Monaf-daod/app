@@ -94,23 +94,6 @@
       "category": "system",
       "title": "Ajman Self Inspiction",
       "description": "Smart system to make inspection process faster, more efficient, and smarter using artificial intelligence.",
-      "images": [
-        "/images/projects/AjmanSelfInspection/1.jpg",
-        "/images/projects/AjmanSelfInspection/2.jpg",
-        "/images/projects/AjmanSelfInspection/3.jpg",
-        "/images/projects/AjmanSelfInspection/4.jpg",
-        "/images/projects/AjmanSelfInspection/5.jpg",
-        "/images/projects/AjmanSelfInspection/6.jpg",
-        "/images/projects/AjmanSelfInspection/7.jpg",
-        "/images/projects/AjmanSelfInspection/8.jpg",
-        "/images/projects/AjmanSelfInspection/9.jpg",
-        "/images/projects/AjmanSelfInspection/10.jpg",
-        "/images/projects/AjmanSelfInspection/11.jpg",
-        "/images/projects/AjmanSelfInspection/12.jpg",
-        "/images/projects/AjmanSelfInspection/13.jpg",
-        "/images/projects/AjmanSelfInspection/14.jpg",
-        "/images/projects/AjmanSelfInspection/15.jpg"
-      ],
       "link": "http://62.171.156.160:1096/login",
       "techniques": [
         { "techName": "React JS", "icon": "/images/techniques/react.svg" },

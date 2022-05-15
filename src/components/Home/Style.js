@@ -3,15 +3,22 @@ import styled from "styled-components";
 export const HomeSection = styled.div`
   height: 100vh;
   position: relative;
-  background: url("images/cover6.jpg");
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   z-index: 0;
   @media (min-width: 320px) and (max-width: 599px) {
     justify-content: center;
   }
+`;
+
+export const ImageBackground = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 `;
 
 export const OverLay = styled.div`

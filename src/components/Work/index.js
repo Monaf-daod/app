@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import { Keyboard, EffectFade, Autoplay } from "swiper";
 import WorkCardFullSlide from "./WorkCardFullSlide";
@@ -12,11 +11,11 @@ import {
   ChevronLeftButton,
   ChevronRightButton,
 } from "./Style.js";
+import { data } from "./data";
 import "swiper/swiper-bundle.css";
 
 const Works = ({ workRef }) => {
   const swiperWorksRef = useRef(null);
-  const [works, setWorks] = useState([]);
 
   const goNext = (swiperRef) => {
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -44,13 +43,7 @@ const Works = ({ workRef }) => {
     navigation: false,
   };
 
-  useEffect(() => {
-    axios.get("js/data.json").then((res) => {
-      setWorks(res.data.works);
-    });
-  }, []);
-
-  const workList = works.map((workItem) => (
+  const workList = data.map((workItem) => (
     <SwiperSlide key={workItem.id}>
       {({ isActive }) => (
         <WorkCardFullSlide

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import {
   SocialMedia,
   Socialmediasocial,
@@ -7,17 +6,10 @@ import {
   SocialmediasocialP,
   SocialmediasocialpSpan,
 } from "./Style.js";
+import { socialMedia } from "./data";
 
 const Socialmedia = ({ contactRef }) => {
-  const [social, setSocial] = useState([]);
-
-  useEffect(() => {
-    axios.get("js/data.json").then((res) => {
-      setSocial(res.data.social);
-    });
-  }, []);
-
-  const socialList = social.map((item) => {
+  const socialList = socialMedia.map((item) => {
     return (
       <Socialmediasocial
         info={item.id}

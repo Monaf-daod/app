@@ -7,9 +7,11 @@ import {
   HomeSection,
   HomeTitle,
   HomeBtn,
+  ImageBackground,
   // Avatar,
   OverLay,
 } from "./Style.js";
+import homeBackgroundSrc from "../../assets/backgrounds/cover6.jpg";
 // import avatar from "../../assets/profile/avatar1.jpg";
 import Typist from "react-text-typist";
 
@@ -28,6 +30,7 @@ const Home = ({ aboutSectionRef }) => {
   return (
     <HomeSection>
       <OverLay />
+      <ImageBackground src={homeBackgroundSrc} alt="backgroundImage" />
       <HomeInformation>
         {/* <Avatar src={avatar} /> */}
         <HomeTitle>Monaf Daod</HomeTitle>

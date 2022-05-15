@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import {
   SkillsMainContainer,
   SkillsContainer,
@@ -16,15 +15,9 @@ import {
   SkillThirdColumn,
   SkillThirdColumnItem,
 } from "./Style.js";
+import { skillsList } from "./data";
 
 const Skills = ({ skillsRef }) => {
-  const [skills, setSkills] = useState([]);
-  useEffect(() => {
-    axios.get("js/data.json").then((res) => {
-      setSkills([...res.data.skills]);
-    });
-  }, []);
-
   // function for handling services display as array of item,
   // each item is array of 2 items
   const handleSkillsItems = (skillsArr) => {
@@ -39,7 +32,7 @@ const Skills = ({ skillsRef }) => {
   /// render Skills section
   const renderSkillsList = (
     <SkillsContainer>
-      {handleSkillsItems(skills).map((colSkills, index) => {
+      {handleSkillsItems(skillsList).map((colSkills, index) => {
         if (index === 0)
           return (
             <SkillFirstColumn key={index} xs={12} md={4}>
