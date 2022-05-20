@@ -1,10 +1,4 @@
 @font-face {
-  font-family: "Sakkal Majalla Regular";
-  src: url("./Fonts/sakkalFont/ArbFONTS-majalla.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
   font-family: "Roboto";
   src: url("./Fonts/Roboto/Roboto-Medium.ttf");
   font-weight: 400;
@@ -12,22 +6,17 @@
 }
 
 :root {
-  --primary-color: #303c28;
-  --secondary-color: #85594a;
-  --third-color: #967b60;
   --forth-color: #dad8d7;
   --main-background-color: rgb(235, 241, 244);
   --primary-font-color: #2e384d;
   --second-font-color: #8798b0;
   --third-font-color: #2e384de6;
+  --forth-font-color: #2e384da2;
 }
 
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; */
-  font-family: "Roboto", "Sakkal Majalla Regular" !important;
+  font-family: "Roboto" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-background-color);

@@ -9,7 +9,7 @@ export const SkillsMainContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  perspective: 700px;
+  perspective: 900px;
 `;
 export const SkillsContainer = styled(Row)`
   width: 55%;
@@ -78,11 +78,11 @@ export const SkillsTitle = styled.h2`
 export const SkillCard = styled.div`
   width: 100%;
   height: 100%;
-  border: 2px solid var(--second-font-color);
+  border: 2px solid var(--forth-font-color);
   border-radius: 50%;
   position: relative;
   transform-style: preserve-3d;
-  transition: all 0.7s;
+  transition: all 0.5s;
   &:hover {
     cursor: pointer;
     transform: rotateY(180deg);
@@ -95,6 +95,7 @@ export const FirstFace = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;

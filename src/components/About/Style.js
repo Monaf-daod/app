@@ -1,11 +1,11 @@
 import styled from "styled-components";
-
+import backgroundSrc from "../../assets/backgrounds/aboutSection.jpg";
 export const AboutSection = styled.div`
   height: 100vh;
-  background: url("images/aboutSection.jpg");
+  /* background: url(${backgroundSrc});
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
   position: relative;
   z-index: 0;
 `;

@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import { data } from "./data";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import { Keyboard, EffectFade, Autoplay } from "swiper";
 import WorkCardFullSlide from "./WorkCardFullSlide";
-// Import Swiper styles
 import {
   WorkSection,
   Worktitle,
@@ -11,12 +11,14 @@ import {
   ChevronLeftButton,
   ChevronRightButton,
 } from "./Style.js";
-import { data } from "./data";
 import "swiper/swiper-bundle.css";
 
-const Works = ({ workRef }) => {
+const Works = () => {
   const swiperWorksRef = useRef(null);
-
+  const [worksList, setWorksList] = useState([]);
+  useEffect(() => {
+    setWorksList([...data]);
+  }, []);
   const goNext = (swiperRef) => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideNext();
@@ -35,7 +37,7 @@ const Works = ({ workRef }) => {
       enabled: true,
     },
     autoplay: {
-      delay: 15000,
+      delay: 5000,
       disableOnInteraction: true,
     },
     modules: [EffectFade, Autoplay, Keyboard],
@@ -43,7 +45,7 @@ const Works = ({ workRef }) => {
     navigation: false,
   };
 
-  const workList = data.map((workItem) => (
+  const renderWorkList = worksList.map((workItem) => (
     <SwiperSlide key={workItem.id}>
       {({ isActive }) => (
         <WorkCardFullSlide
@@ -56,7 +58,7 @@ const Works = ({ workRef }) => {
   ));
 
   return (
-    <WorkSection ref={workRef} data-aos="fade-right">
+    <WorkSection id="work-section">
       <Worktitle>Projects</Worktitle>
       <WorkSwiperContainer>
         <Swiper
@@ -77,7 +79,7 @@ const Works = ({ workRef }) => {
               onClick={() => goNext(swiperWorksRef)}
             />
           </WorkSliderButtonsContainer>
-          {workList}
+          {renderWorkList}
         </Swiper>
       </WorkSwiperContainer>
     </WorkSection>

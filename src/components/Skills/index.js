@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { data } from "./data";
 import {
   SkillsMainContainer,
   SkillsContainer,
@@ -15,9 +16,12 @@ import {
   SkillThirdColumn,
   SkillThirdColumnItem,
 } from "./Style.js";
-import { skillsList } from "./data";
 
-const Skills = ({ skillsRef }) => {
+const Skills = () => {
+  const [skillsList, setSkillsList] = useState([]);
+  useEffect(() => {
+    setSkillsList([...data]);
+  }, []);
   // function for handling services display as array of item,
   // each item is array of 2 items
   const handleSkillsItems = (skillsArr) => {
@@ -92,7 +96,7 @@ const Skills = ({ skillsRef }) => {
   );
 
   return (
-    <SkillsMainContainer ref={skillsRef} data-aos="zoom-out">
+    <SkillsMainContainer id="skills-section">
       <SkillsTitle>Skills</SkillsTitle>
       {renderSkillsList}
     </SkillsMainContainer>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Particles from "react-tsparticles";
+import Typist from "react-text-typist";
+// import Particles from "react-tsparticles";
 import ParticleEffectButton from "react-particle-effect-button";
 import {
   HomeInformation,
@@ -7,32 +8,24 @@ import {
   HomeSection,
   HomeTitle,
   HomeBtn,
-  ImageBackground,
-  // Avatar,
   OverLay,
 } from "./Style.js";
-import homeBackgroundSrc from "../../assets/backgrounds/cover6.jpg";
-// import avatar from "../../assets/profile/avatar1.jpg";
-import Typist from "react-text-typist";
 
-const Home = ({ aboutSectionRef }) => {
+const Home = () => {
   const [ishidden, setIsHidden] = useState(false);
 
   const handleScroll = () => {
     setIsHidden(true);
     setTimeout(() => {
-      window.scrollTo({
-        top: aboutSectionRef.current.offsetTop,
-        behavior: "smooth",
-      });
+      document
+        .getElementById("about-section")
+        .scrollIntoView({ behavior: "smooth", block: "center" });
     }, 1000);
   };
   return (
     <HomeSection>
       <OverLay />
-      <ImageBackground src={homeBackgroundSrc} alt="backgroundImage" />
       <HomeInformation>
-        {/* <Avatar src={avatar} /> */}
         <HomeTitle>Monaf Daod</HomeTitle>
         <HomeInfo>
           <Typist
@@ -50,7 +43,7 @@ const Home = ({ aboutSectionRef }) => {
           <HomeBtn onClick={handleScroll}>Let's Begin</HomeBtn>
         </ParticleEffectButton>
       </HomeInformation>
-      <Particles
+      {/* <Particles
         options={{
           style: {
             position: "absolute",
@@ -64,7 +57,7 @@ const Home = ({ aboutSectionRef }) => {
                 mode: "bubble",
               },
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
             },
@@ -90,7 +83,7 @@ const Home = ({ aboutSectionRef }) => {
             },
           },
         }}
-      />
+      /> */}
     </HomeSection>
   );
 };

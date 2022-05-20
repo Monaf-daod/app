@@ -14,16 +14,6 @@ import ajmanSrc2 from "../../assets/projects/AjmanSelfInspection/2.jpg";
 import ajmanSrc3 from "../../assets/projects/AjmanSelfInspection/3.jpg";
 import ajmanSrc4 from "../../assets/projects/AjmanSelfInspection/4.jpg";
 import ajmanSrc5 from "../../assets/projects/AjmanSelfInspection/5.jpg";
-import ajmanSrc6 from "../../assets/projects/AjmanSelfInspection/6.jpg";
-import ajmanSrc7 from "../../assets/projects/AjmanSelfInspection/7.jpg";
-import ajmanSrc8 from "../../assets/projects/AjmanSelfInspection/8.jpg";
-import ajmanSrc9 from "../../assets/projects/AjmanSelfInspection/9.jpg";
-import ajmanSrc10 from "../../assets/projects/AjmanSelfInspection/10.jpg";
-import ajmanSrc11 from "../../assets/projects/AjmanSelfInspection/11.jpg";
-import ajmanSrc12 from "../../assets/projects/AjmanSelfInspection/12.jpg";
-import ajmanSrc13 from "../../assets/projects/AjmanSelfInspection/13.jpg";
-import ajmanSrc14 from "../../assets/projects/AjmanSelfInspection/14.jpg";
-import ajmanSrc15 from "../../assets/projects/AjmanSelfInspection/15.jpg";
 
 // Meta cms images
 import metaCmsSrc1 from "../../assets/projects/MetaCms/1.jpg";
@@ -31,11 +21,6 @@ import metaCmsSrc2 from "../../assets/projects/MetaCms/2.jpg";
 import metaCmsSrc3 from "../../assets/projects/MetaCms/3.jpg";
 import metaCmsSrc4 from "../../assets/projects/MetaCms/4.jpg";
 import metaCmsSrc5 from "../../assets/projects/MetaCms/5.jpg";
-import metaCmsSrc6 from "../../assets/projects/MetaCms/6.jpg";
-import metaCmsSrc7 from "../../assets/projects/MetaCms/7.jpg";
-import metaCmsSrc8 from "../../assets/projects/MetaCms/8.jpg";
-import metaCmsSrc9 from "../../assets/projects/MetaCms/9.jpg";
-import metaCmsSrc10 from "../../assets/projects/MetaCms/10.jpg";
 
 // spare admin images
 import spareAdminSrc1 from "../../assets/projects/sparePartsAdmin/1.jpg";
@@ -43,16 +28,6 @@ import spareAdminSrc2 from "../../assets/projects/sparePartsAdmin/2.jpg";
 import spareAdminSrc3 from "../../assets/projects/sparePartsAdmin/3.jpg";
 import spareAdminSrc4 from "../../assets/projects/sparePartsAdmin/4.jpg";
 import spareAdminSrc5 from "../../assets/projects/sparePartsAdmin/5.jpg";
-import spareAdminSrc6 from "../../assets/projects/sparePartsAdmin/6.jpg";
-import spareAdminSrc7 from "../../assets/projects/sparePartsAdmin/7.jpg";
-import spareAdminSrc8 from "../../assets/projects/sparePartsAdmin/8.jpg";
-import spareAdminSrc9 from "../../assets/projects/sparePartsAdmin/9.jpg";
-import spareAdminSrc10 from "../../assets/projects/sparePartsAdmin/10.jpg";
-import spareAdminSrc11 from "../../assets/projects/sparePartsAdmin/11.jpg";
-import spareAdminSrc12 from "../../assets/projects/sparePartsAdmin/12.jpg";
-import spareAdminSrc13 from "../../assets/projects/sparePartsAdmin/13.jpg";
-import spareAdminSrc14 from "../../assets/projects/sparePartsAdmin/14.jpg";
-import spareAdminSrc15 from "../../assets/projects/sparePartsAdmin/15.jpg";
 
 // spare Parts images
 import SparePartsSrc1 from "../../assets/projects/sparePartsWeb/1.jpg";
@@ -67,17 +42,6 @@ import MetaWebsiteSrc2 from "../../assets/projects/MetaWebsite/2.jpg";
 import MetaWebsiteSrc3 from "../../assets/projects/MetaWebsite/3.jpg";
 import MetaWebsiteSrc4 from "../../assets/projects/MetaWebsite/4.jpg";
 import MetaWebsiteSrc5 from "../../assets/projects/MetaWebsite/5.jpg";
-import MetaWebsiteSrc6 from "../../assets/projects/MetaWebsite/6.jpg";
-import MetaWebsiteSrc7 from "../../assets/projects/MetaWebsite/7.jpg";
-import MetaWebsiteSrc8 from "../../assets/projects/MetaWebsite/8.jpg";
-import MetaWebsiteSrc9 from "../../assets/projects/MetaWebsite/9.jpg";
-import MetaWebsiteSrc10 from "../../assets/projects/MetaWebsite/10.jpg";
-import MetaWebsiteSrc11 from "../../assets/projects/MetaWebsite/11.jpg";
-import MetaWebsiteSrc12 from "../../assets/projects/MetaWebsite/12.jpg";
-import MetaWebsiteSrc13 from "../../assets/projects/MetaWebsite/13.jpg";
-import MetaWebsiteSrc14 from "../../assets/projects/MetaWebsite/14.jpg";
-import MetaWebsiteSrc15 from "../../assets/projects/MetaWebsite/15.jpg";
-import MetaWebsiteSrc16 from "../../assets/projects/MetaWebsite/16.jpg";
 
 // Safeone website images
 import SafeOneSrc1 from "../../assets/projects/SafeOneGroup/1.jpg";
@@ -85,10 +49,6 @@ import SafeOneSrc2 from "../../assets/projects/SafeOneGroup/2.jpg";
 import SafeOneSrc3 from "../../assets/projects/SafeOneGroup/3.jpg";
 import SafeOneSrc4 from "../../assets/projects/SafeOneGroup/4.jpg";
 import SafeOneSrc5 from "../../assets/projects/SafeOneGroup/5.jpg";
-import SafeOneSrc6 from "../../assets/projects/SafeOneGroup/6.jpg";
-import SafeOneSrc7 from "../../assets/projects/SafeOneGroup/7.jpg";
-import SafeOneSrc8 from "../../assets/projects/SafeOneGroup/8.jpg";
-import SafeOneSrc9 from "../../assets/projects/SafeOneGroup/9.jpg";
 export const data = [
   {
     id: 1,
@@ -103,23 +63,7 @@ export const data = [
       { techName: "Sass", icon: sassIcon },
       { techName: "Google Maps", icon: googleIcon },
     ],
-    images: [
-      ajmanSrc1,
-      ajmanSrc2,
-      ajmanSrc3,
-      ajmanSrc4,
-      ajmanSrc5,
-      ajmanSrc6,
-      ajmanSrc7,
-      ajmanSrc8,
-      ajmanSrc9,
-      ajmanSrc10,
-      ajmanSrc11,
-      ajmanSrc12,
-      ajmanSrc13,
-      ajmanSrc14,
-      ajmanSrc15,
-    ],
+    images: [ajmanSrc1, ajmanSrc2, ajmanSrc3, ajmanSrc4, ajmanSrc5],
   },
   {
     id: 2,
@@ -127,18 +71,7 @@ export const data = [
     title: "Meta CMS",
     description:
       "It offers awareness and recognition of your brand to the customers for an enhanced communication.",
-    images: [
-      metaCmsSrc1,
-      metaCmsSrc2,
-      metaCmsSrc3,
-      metaCmsSrc4,
-      metaCmsSrc5,
-      metaCmsSrc6,
-      metaCmsSrc7,
-      metaCmsSrc8,
-      metaCmsSrc9,
-      metaCmsSrc10,
-    ],
+    images: [metaCmsSrc1, metaCmsSrc2, metaCmsSrc3, metaCmsSrc4, metaCmsSrc5],
     link: "https://Spare.ae",
     techniques: [
       { techName: "React JS", icon: reactIcon },
@@ -159,16 +92,6 @@ export const data = [
       spareAdminSrc3,
       spareAdminSrc4,
       spareAdminSrc5,
-      spareAdminSrc6,
-      spareAdminSrc7,
-      spareAdminSrc8,
-      spareAdminSrc9,
-      spareAdminSrc10,
-      spareAdminSrc11,
-      spareAdminSrc12,
-      spareAdminSrc13,
-      spareAdminSrc14,
-      spareAdminSrc15,
     ],
     link: "https://Spare.ae",
     techniques: [
@@ -208,7 +131,6 @@ export const data = [
         techName: "FaceBook API",
         icon: facebookIcon,
       },
-      { techName: "Google API", icon: googleIcon },
       { techName: "Google Maps", icon: googleIcon },
     ],
   },
@@ -224,17 +146,6 @@ export const data = [
       MetaWebsiteSrc3,
       MetaWebsiteSrc4,
       MetaWebsiteSrc5,
-      MetaWebsiteSrc6,
-      MetaWebsiteSrc7,
-      MetaWebsiteSrc8,
-      MetaWebsiteSrc9,
-      MetaWebsiteSrc10,
-      MetaWebsiteSrc11,
-      MetaWebsiteSrc12,
-      MetaWebsiteSrc13,
-      MetaWebsiteSrc14,
-      MetaWebsiteSrc15,
-      MetaWebsiteSrc16,
     ],
     link: "https://foliometasolweb.meta-itech.com/",
     techniques: [
@@ -251,17 +162,7 @@ export const data = [
     title: "Safe One Group",
     description:
       "Safe One Group website. Company for Building & Constructions based in UAE, Abu Dhabi Emirate",
-    images: [
-      SafeOneSrc1,
-      SafeOneSrc2,
-      SafeOneSrc3,
-      SafeOneSrc4,
-      SafeOneSrc5,
-      SafeOneSrc6,
-      SafeOneSrc7,
-      SafeOneSrc8,
-      SafeOneSrc9,
-    ],
+    images: [SafeOneSrc1, SafeOneSrc2, SafeOneSrc3, SafeOneSrc4, SafeOneSrc5],
     link: "https://safeonegroup.ae/",
     techniques: [
       { techName: "Next JS", icon: nextjsIcon },

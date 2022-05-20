@@ -1,13 +1,12 @@
-import React, { Fragment, useState, useEffect, lazy } from "react";
-import { checkLoadImages } from "./utiliesFuctions";
+import React, { Suspense, lazy } from "react";
+import CustomLoader from "./components/customLoader";
 const Index = lazy(() => import("./components/Index"));
-const CustomLoader = lazy(() => import("./components/customLoader"));
 const App = () => {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    checkLoadImages(setLoading);
-  }, []);
-  return <Fragment>{loading ? <CustomLoader /> : <Index />}</Fragment>;
+  return (
+    <Suspense fallback={<CustomLoader />}>
+      <Index />
+    </Suspense>
+  );
 };
 
 export default App;

@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
+import { Menu } from "react-feather";
 import {
   NavbarSection,
   UlList,
   ListItem,
-  MenuSvg,
   VerticalMenu,
   VerticalItemsList,
   VerticalListItem,
 } from "./Style.js";
-import MenuIcon from "../../assets/icons/menu.svg";
 
-const Navbar = ({ sections }) => {
-  const [ABOUT_SECTION, WORK_SECTION, CONTACT_SECTION, SKILLS_SECTION] =
-    sections;
+const Navbar = () => {
   const [backgroundVisiblity, setBackgroundVisibility] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
-
+  const toggle = () => setIsOpen(true);
   /// function for handling navigation bar position and its background color
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -25,7 +21,7 @@ const Navbar = ({ sections }) => {
       else setBackgroundVisibility(true);
     });
     return document.removeEventListener("scroll", () => {
-      if (window.scrollY > 100) setBackgroundVisibility(false);
+      if (window.scrollY > 120) setBackgroundVisibility(false);
       else setBackgroundVisibility(true);
     });
   }, []);
@@ -33,18 +29,8 @@ const Navbar = ({ sections }) => {
   /// function for closeing vertical menu on clicking outside menu
   useEffect(() => {
     document.addEventListener("click", (e) => {
-      if (
-        e.target.id !== "verticalMenuToggler" &&
-        e.target.id !== "verticalMenu"
-      )
-        setIsOpen(false);
-    });
-
-    return document.removeEventListener("click", (e) => {
-      if (
-        e.target.id !== "verticalMenuToggler" &&
-        e.target.id !== "verticalMenu"
-      )
+      if (e.target.id === "verticalMenuToggler") toggle();
+      else if (!e.target.id || e.target.id !== "verticalMenuToggler")
         setIsOpen(false);
     });
   }, []);
@@ -54,54 +40,54 @@ const Navbar = ({ sections }) => {
       <UlList>
         <ListItem
           onClick={() =>
-            window.scrollTo({
-              top: ABOUT_SECTION.current.offsetTop,
-              behavior: "smooth",
-            })
+            document
+              .getElementById("about-section")
+              .scrollIntoView({ behavior: "smooth", block: "center" })
           }
         >
           About
         </ListItem>
         <ListItem
           onClick={() =>
-            window.scrollTo({
-              top: SKILLS_SECTION.current.offsetTop,
-              behavior: "smooth",
-            })
+            document
+              .getElementById("skills-section")
+              .scrollIntoView({ behavior: "smooth", block: "center" })
           }
         >
           Skills
         </ListItem>
         <ListItem
           onClick={() =>
-            window.scrollTo({
-              top: WORK_SECTION.current.offsetTop,
-              behavior: "smooth",
-            })
+            document
+              .getElementById("work-section")
+              .scrollIntoView({ behavior: "smooth", block: "center" })
           }
         >
           Projects
         </ListItem>
         <ListItem
           onClick={() =>
-            window.scrollTo({
-              top: CONTACT_SECTION.current.offsetTop,
-              behavior: "smooth",
-            })
+            document
+              .getElementById("contact-section")
+              .scrollIntoView({ behavior: "smooth", block: "center" })
           }
         >
           Contact
         </ListItem>
       </UlList>
       <VerticalMenu>
-        <MenuSvg src={MenuIcon} onClick={toggle} id="verticalMenuToggler" />
+        <Menu
+          color={backgroundVisiblity ? "var(--primary-font-color)" : "#ffffff"}
+          size={26}
+          style={{ cursor: "pointer" }}
+          id="verticalMenuToggler"
+        />
         <VerticalItemsList isOpen={isOpen} id="verticalMenu">
           <VerticalListItem
             onClick={() => {
-              window.scrollTo({
-                top: ABOUT_SECTION.current.offsetTop,
-                behavior: "smooth",
-              });
+              document
+                .getElementById("about-section")
+                .scrollIntoView({ behavior: "smooth", block: "center" });
               toggle();
             }}
           >
@@ -109,10 +95,9 @@ const Navbar = ({ sections }) => {
           </VerticalListItem>
           <VerticalListItem
             onClick={() => {
-              window.scrollTo({
-                top: SKILLS_SECTION.current.offsetTop,
-                behavior: "smooth",
-              });
+              document
+                .getElementById("skills-section")
+                .scrollIntoView({ behavior: "smooth", block: "start" });
               toggle();
             }}
           >
@@ -120,10 +105,9 @@ const Navbar = ({ sections }) => {
           </VerticalListItem>
           <VerticalListItem
             onClick={() => {
-              window.scrollTo({
-                top: WORK_SECTION.current.offsetTop,
-                behavior: "smooth",
-              });
+              document
+                .getElementById("work-section")
+                .scrollIntoView({ behavior: "smooth", block: "center" });
               toggle();
             }}
           >
@@ -131,10 +115,9 @@ const Navbar = ({ sections }) => {
           </VerticalListItem>
           <VerticalListItem
             onClick={() => {
-              window.scrollTo({
-                top: CONTACT_SECTION.current.offsetTop,
-                behavior: "smooth",
-              });
+              document
+                .getElementById("contact-section")
+                .scrollIntoView({ behavior: "smooth", block: "center" });
               toggle();
             }}
           >

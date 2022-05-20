@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import homeBackgroundSrc from "../../assets/backgrounds/cover6.jpg";
 
 export const HomeSection = styled.div`
   height: 100vh;
+  background: url(${homeBackgroundSrc});
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   align-items: center;
@@ -9,16 +14,6 @@ export const HomeSection = styled.div`
   @media (min-width: 320px) and (max-width: 599px) {
     justify-content: center;
   }
-`;
-
-export const ImageBackground = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
 `;
 
 export const OverLay = styled.div`

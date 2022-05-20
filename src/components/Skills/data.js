@@ -7,7 +7,7 @@ import sassIcon from "../../assets/techniques/sass.svg";
 import bootstrapIcon from "../../assets/techniques/bootstrap.svg";
 import matertialUiIcon from "../../assets/techniques/materialui.svg";
 import tailwindIcon from "../../assets/techniques/tailwind.svg";
-export const skillsList = [
+export const data = [
   {
     id: 1,
     title: "Java Script",

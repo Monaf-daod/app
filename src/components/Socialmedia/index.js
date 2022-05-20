@@ -8,7 +8,7 @@ import {
 } from "./Style.js";
 import { socialMedia } from "./data";
 
-const Socialmedia = ({ contactRef }) => {
+const Socialmedia = () => {
   const socialList = socialMedia.map((item) => {
     return (
       <Socialmediasocial
@@ -23,7 +23,7 @@ const Socialmedia = ({ contactRef }) => {
       </Socialmediasocial>
     );
   });
-  return <SocialMedia ref={contactRef}>{socialList}</SocialMedia>;
+  return <SocialMedia id="contact-section">{socialList}</SocialMedia>;
 };
 
 export default Socialmedia;

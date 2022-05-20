@@ -3,7 +3,13 @@ export const MainContainer = styled.div`
   position: relative;
   overflow: hidden;
   width: 100%;
-  background-image: url("/images/background2.jpg");
-  background-repeat: repeat-y;
-  background-size: contain;
+  margin: 0;
+  background-image: linear-gradient(
+    to left bottom,
+    #354f67,
+    #667387,
+    #9499a8,
+    #c2c2ca,
+    #eeeeee
+  );
 `;
