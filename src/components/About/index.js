@@ -2,7 +2,6 @@ import React from "react";
 import {
   AboutSection,
   Aboutinfo,
-  AboutSectionOverlay,
   AboutInfoDir,
   AboutInfoDesc,
 } from "./Style.js";

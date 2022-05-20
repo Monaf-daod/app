@@ -1,11 +1,7 @@
 import styled from "styled-components";
-import backgroundSrc from "../../assets/backgrounds/aboutSection.jpg";
+
 export const AboutSection = styled.div`
   height: 100vh;
-  /* background: url(${backgroundSrc});
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; */
   position: relative;
   z-index: 0;
 `;
@@ -43,10 +39,6 @@ export const AboutInfoDir = styled.h4`
   color: #ffffff;
   margin: 0.2rem;
   text-align: center;
-  /* text-shadow: 1px 0px 1px var(--second-font-color),
-    0px 1px 1px var(--second-font-color), 2px 1px 1px var(--second-font-color),
-    1px 2px 1px var(--second-font-color), 3px 2px 1px var(--second-font-color),
-    2px 3px 1px var(--second-font-color); */
 `;
 
 export const AboutInfoDesc = styled.p`
