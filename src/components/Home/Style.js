@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import homeBackgroundSrc from "../../assets/backgrounds/cover2.jpg";
+import homeBackgroundSrc from "../../assets/backgrounds/cover2.webp";
 
 export const HomeSection = styled.div`
   height: 100vh;

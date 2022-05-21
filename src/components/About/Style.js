@@ -1,9 +1,19 @@
 import styled from "styled-components";
+import aboutImageSrc from "../../assets/backgrounds/cover3.webp";
 
 export const AboutSection = styled.div`
   height: 100vh;
+  padding: 1rem 0.4rem;
   position: relative;
   z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 320px) and (max-width: 767px) {
+    min-height: 100vh;
+    height: fit-content;
+    flex-direction: column;
+  }
 `;
 
 export const AboutSectionOverlay = styled.div`
@@ -19,8 +29,7 @@ export const AboutSectionOverlay = styled.div`
 `;
 
 export const Aboutinfo = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,8 +37,65 @@ export const Aboutinfo = styled.div`
   padding: 1rem 2rem;
   padding-top: 5rem;
   z-index: 1;
-  @media (min-width: 320px) and (max-width: 1024px) {
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 95%;
     align-items: center;
+  }
+`;
+
+export const AboutImage = styled.div`
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: url(${aboutImageSrc});
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  overflow: hidden;
+  @media (min-width: 320px) and (max-width: 767px) {
+    width: 200px;
+    height: 200px;
+  }
+  ::before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    top: 0%;
+    left: 20%;
+    z-index: -1;
+    border-radius: 50%;
+    background: var(--second-font-color);
+    animation: floatTop infinite 2s alternate linear;
+    @keyframes floatTop {
+      0% {
+        transform: translate(10%, 5%);
+      }
+      100% {
+        transform: translate(15%, 30%);
+      }
+    }
+  }
+  ::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    bottom: 0%;
+    right: 20%;
+    z-index: -1;
+    border-radius: 50%;
+    background: var(--second-font-color);
+    animation: floatBottom infinite 2s alternate linear;
+    @keyframes floatBottom {
+      0% {
+        transform: translate(10%, -5%);
+      }
+      100% {
+        transform: translate(15%, 20%);
+      }
+    }
   }
 `;
 
