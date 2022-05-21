@@ -1,16 +1,24 @@
 import styled from "styled-components";
-import homeBackgroundSrc from "../../assets/backgrounds/cover6.jpg";
+import homeBackgroundSrc from "../../assets/backgrounds/cover2.jpg";
 
 export const HomeSection = styled.div`
   height: 100vh;
-  background: url(${homeBackgroundSrc});
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   position: relative;
   display: flex;
   align-items: center;
   z-index: 0;
+  ::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url(${homeBackgroundSrc});
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    transform: rotateY(180deg);
+  }
   @media (min-width: 320px) and (max-width: 599px) {
     justify-content: center;
   }
@@ -24,6 +32,54 @@ export const OverLay = styled.div`
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.15);
   z-index: 1;
+`;
+export const AnimationOverLay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  ::before {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: -6%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--second-font-color);
+    animation: floatLeft infinite 2s alternate linear;
+  }
+  ::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: var(--second-font-color);
+    transform: translate(110%, -50%);
+    animation: floatRight infinite 2s alternate linear;
+  }
+  @keyframes floatRight {
+    0% {
+      transform: translate(125%, -50%);
+    }
+    100% {
+      transform: translate(100%, -50%);
+    }
+  }
+  @keyframes floatLeft {
+    0% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(20%);
+    }
+  }
 `;
 
 export const HomeInformation = styled.div`
@@ -47,7 +103,7 @@ export const HomeTitle = styled.h2`
   font-size: 4rem;
   font-weight: 900;
   user-select: none;
-  color: var(--primary-font-color);
+  color: #ffffff;
   @media (min-width: 320px) and (max-width: 599px) {
     font-size: 1.9rem;
   }
@@ -78,11 +134,11 @@ export const Homedesc = styled.p`
 `;
 
 export const HomeBtn = styled.button`
-  background: var(--primary-font-color);
-  color: #fff;
+  background: #ffffff;
+  color:var(--primary-font-color)
   font-size: 1.2rem;
   width: 150px;
-  border: 1px solid var(--primary-font-color);
+  border: 1px solid #ffffff;
   padding: 15px;
   margin-top: 10px;
   user-select: none;
@@ -91,7 +147,7 @@ export const HomeBtn = styled.button`
   border-radius: 10px;
   :hover {
     background: transparent;
-    color: var(--primary-font-color);
+    color: #ffffff;
     border: 1px solid var(--primary-font-color);
     transition: all 0.6s ease;
   }

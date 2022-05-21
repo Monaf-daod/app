@@ -5,8 +5,7 @@ export const NavbarSection = styled.div`
   padding: 15px 0px;
   padding-left: 10rem;
   overflow: hidden;
-  color: ${(props) =>
-    props.backgroundVisible ? "var(--primary-font-color)" : "#ffffff"};
+  color: ${(props) => (props.backgroundVisible ? "#ffffff" : "#ffffff")};
   background: ${(props) =>
     props.backgroundVisible ? "transparent" : "var(--primary-font-color)"};
   position: fixed;

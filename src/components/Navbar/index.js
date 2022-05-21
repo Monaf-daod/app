@@ -77,7 +77,7 @@ const Navbar = () => {
       </UlList>
       <VerticalMenu>
         <Menu
-          color={backgroundVisiblity ? "var(--primary-font-color)" : "#ffffff"}
+          color="#ffffff"
           size={26}
           style={{ cursor: "pointer" }}
           id="verticalMenuToggler"
