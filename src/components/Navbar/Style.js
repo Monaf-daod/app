@@ -14,10 +14,18 @@ export const NavbarSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 9999;
+  z-index: 10;
   transition: background 1 linear;
   @media (min-width: 320px) and (max-width: 767px) {
     padding-left: 0.7rem;
+  }
+`;
+
+export const LinksContainer = styled.div`
+  display: inline-block;
+  margin-right: 2rem;
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: none;
   }
 `;
 

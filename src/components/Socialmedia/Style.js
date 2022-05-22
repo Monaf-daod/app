@@ -46,6 +46,9 @@ export const SocialmediasocialP = styled.p`
   font-size: 20px;
   color: #fff;
   text-align: center;
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 16px;
+  }
 `;
 
 export const SocialmediasocialpSpan = styled.span`

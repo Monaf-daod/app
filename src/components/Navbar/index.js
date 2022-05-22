@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu } from "react-feather";
+import { Menu, Phone, Mail } from "react-feather";
 import {
   NavbarSection,
   UlList,
@@ -7,7 +7,9 @@ import {
   VerticalMenu,
   VerticalItemsList,
   VerticalListItem,
+  LinksContainer,
 } from "./Style.js";
+import CustomLinkWithAnimation from "../CustomLinkWithAnimation/index.js";
 
 const Navbar = () => {
   const [backgroundVisiblity, setBackgroundVisibility] = useState(true);
@@ -75,6 +77,20 @@ const Navbar = () => {
           Contact
         </ListItem>
       </UlList>
+      <LinksContainer>
+        <CustomLinkWithAnimation
+          mainContent="+963936431335"
+          IconComponent={Phone}
+          providerLink="tel:"
+          tabFlag="_self"
+        />
+        <CustomLinkWithAnimation
+          mainContent="monaf2daod@gmail.com"
+          IconComponent={Mail}
+          providerLink="mailto:"
+          tabFlag="_self"
+        />
+      </LinksContainer>
       <VerticalMenu>
         <Menu
           color="#ffffff"
