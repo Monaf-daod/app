@@ -50,7 +50,7 @@ export const AnimationOverLay = styled.div`
     height: 150px;
     border-radius: 50%;
     background: var(--second-font-color);
-    animation: floatLeft infinite 2s alternate linear;
+    animation: floatLeft infinite 4s alternate linear;
   }
   ::after {
     content: "";
@@ -61,15 +61,15 @@ export const AnimationOverLay = styled.div`
     height: 400px;
     border-radius: 50%;
     background: var(--second-font-color);
-    transform: translate(110%, -50%);
-    animation: floatRight infinite 2s alternate linear;
+    transform: translate(110%, -30%);
+    animation: floatRight infinite 4s alternate linear;
   }
   @keyframes floatRight {
     0% {
-      transform: translate(125%, -50%);
+      transform: translate(125%, -30%);
     }
     100% {
-      transform: translate(100%, -50%);
+      transform: translate(100%, -30%);
     }
   }
   @keyframes floatLeft {

@@ -122,5 +122,6 @@ export const AboutInfoDesc = styled.p`
 `;
 
 export const Span = styled.span`
-  color: var(--second-font-color);
+  color: var(--primary-font-color);
+  font-size: 2.3rem;
 `;

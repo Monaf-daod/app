@@ -5,6 +5,7 @@ import {
   AboutImage,
   AboutInfoDir,
   AboutInfoDesc,
+  Span,
 } from "./Style.js";
 
 const About = () => {
@@ -13,9 +14,11 @@ const About = () => {
       {/* <AboutSectionOverlay /> */}
       <AboutImage />
       <Aboutinfo>
-        <AboutInfoDir>Creative Front End Developer</AboutInfoDir>
+        <AboutInfoDir>
+          <Span>Creative</Span> Front End Developer
+        </AboutInfoDir>
         <AboutInfoDesc>
-          I am a professional ,Front End Developer Proficient in building and
+          I am a professional, Front End Developer Proficient in building and
           developing modern and responsive websites in the Software industry.
           Let us work together.
         </AboutInfoDesc>
