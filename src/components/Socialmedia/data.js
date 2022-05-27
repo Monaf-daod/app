@@ -10,7 +10,7 @@ export const socialMedia = [
     icon: linkedInIcon,
     title: "Follow Me on",
     body: "Linkedin",
-    link: "https://www.linkedin.com/in/monaf-daod-877281220",
+    link: "https://www.linkedin.com/in/monaf-daod",
     flag: "_blank",
   },
   {
