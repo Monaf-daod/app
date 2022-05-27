@@ -18,9 +18,10 @@ const CustomLinkWithAnimation = ({
           borderRadius: "50%",
           fontSize: "1.2rem",
           padding: "1px",
-          margin: "2px",
+          marginRight: "5px",
         }}
       />
+      {mainContent}
     </LinkContainer>
   );
 };

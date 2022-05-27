@@ -100,7 +100,7 @@ export const data = [
     category: "system",
     title: "AE Spare Admin",
     description:
-      "this is description section this is description section this is description section",
+      "Admin dashboard for Spare Parts E-commerce store. Analytics, vendors, brands, items and orders managment",
     images: [
       spareAdminSrc1,
       spareAdminSrc2,
@@ -124,7 +124,7 @@ export const data = [
     category: "e-commerce",
     title: "AE Spare Parts",
     description:
-      "E-Commerce platform ,It offers customers a variety of shopping car spare parts at the best prices in the region.",
+      "E-Commerce platform, It offers customers a variety of shopping car spare parts at the best prices in the region.",
     images: [
       SparePartsSrc1,
       SparePartsSrc2,

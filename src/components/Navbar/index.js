@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, Phone, Mail } from "react-feather";
+import { Menu, Phone } from "react-feather";
 import {
   NavbarSection,
   UlList,
@@ -82,12 +82,6 @@ const Navbar = () => {
           mainContent="+963936431335"
           IconComponent={Phone}
           providerLink="tel:"
-          tabFlag="_self"
-        />
-        <CustomLinkWithAnimation
-          mainContent="monaf2daod@gmail.com"
-          IconComponent={Mail}
-          providerLink="mailto:"
           tabFlag="_self"
         />
       </LinksContainer>
