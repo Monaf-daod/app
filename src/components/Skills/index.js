@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { data } from "./data";
+import Bounce from "react-reveal/Bounce";
 import {
   SkillsMainContainer,
   SkillsContainer,
@@ -96,10 +97,12 @@ const Skills = () => {
   );
 
   return (
-    <SkillsMainContainer id="skills-section">
-      <SkillsTitle>Skills</SkillsTitle>
-      {renderSkillsList}
-    </SkillsMainContainer>
+    <Bounce>
+      <SkillsMainContainer id="skills-section">
+        <SkillsTitle>Skills</SkillsTitle>
+        {renderSkillsList}
+      </SkillsMainContainer>
+    </Bounce>
   );
 };
 

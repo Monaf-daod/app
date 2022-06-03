@@ -1,4 +1,6 @@
 import React from "react";
+import { socialMedia } from "./data";
+import Flip from "react-reveal/Flip";
 import {
   SocialMedia,
   Socialmediasocial,
@@ -6,7 +8,6 @@ import {
   SocialmediasocialP,
   SocialmediasocialpSpan,
 } from "./Style.js";
-import { socialMedia } from "./data";
 
 const Socialmedia = () => {
   const socialList = socialMedia.map((item) => {
@@ -23,7 +24,11 @@ const Socialmedia = () => {
       </Socialmediasocial>
     );
   });
-  return <SocialMedia id="contact-section">{socialList}</SocialMedia>;
+  return (
+    <Flip left>
+      <SocialMedia id="contact-section">{socialList}</SocialMedia>
+    </Flip>
+  );
 };
 
 export default Socialmedia;
