@@ -63,7 +63,7 @@ export const data = [
     title: "Ajman Self Inspiction",
     description:
       "Smart system to make inspection process faster, more efficient, and smarter using artificial intelligence.",
-    link: "http://62.171.156.160:1096/login",
+    link: "https://sec.am.gov.ae/",
     techniques: [
       { techName: "React JS", icon: reactIcon },
       { techName: "Bootstarp", icon: bootstrapIcon },
@@ -87,7 +87,7 @@ export const data = [
       metaCmsSrc6,
       metaCmsSrc7,
     ],
-    link: "https://Spare.ae",
+    link: "https://foliov2testadmin.meta-itech.com/",
     techniques: [
       { techName: "React JS", icon: reactIcon },
       { techName: "Bootstarp", icon: bootstrapIcon },
@@ -109,7 +109,7 @@ export const data = [
       spareAdminSrc5,
       spareAdminSrc6,
     ],
-    link: "https://Spare.ae",
+    link: "http://sptestadmin.spare.ae/login",
     techniques: [
       { techName: "React JS", icon: reactIcon },
       { techName: "Bootstarp", icon: bootstrapIcon },
@@ -132,7 +132,7 @@ export const data = [
       SparePartsSrc4,
       SparePartsSrc5,
     ],
-    link: "https://Spare.ae",
+    link: "http://sptest.spare.ae/",
     techniques: [
       { techName: "React JS", icon: reactIcon },
       {
