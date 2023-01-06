@@ -37,9 +37,11 @@ const WorkCardFullSlide = ({
             <TechniqueImage src={tech.icon} key={tech.techName} />
           ))}
         </TechniquesIconsContainer>
-        <SeeMoreButton onClick={() => window.open(`${item.link}`, "_blank")}>
-          Visit
-        </SeeMoreButton>
+        {item.link && (
+          <SeeMoreButton onClick={() => window.open(`${item.link}`, "_blank")}>
+            Visit
+          </SeeMoreButton>
+        )}
       </WorkDetailsSection>
       <WorkImagesSection className={applyAnimationOnImage && "fadeLeftImage"}>
         <Swiper

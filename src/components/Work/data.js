@@ -7,6 +7,27 @@ import matertialUiIcon from "../../assets/techniques/materialui.svg";
 import nextjsIcon from "../../assets/techniques/nextjs.svg";
 import reactIcon from "../../assets/techniques/react.svg";
 import sassIcon from "../../assets/techniques/sass.svg";
+import twitterIcon from "../../assets/techniques/twitter.svg";
+import ePaymentIcon from "../../assets/techniques/ePayment.svg";
+
+// IBS images
+import ibsSrc1 from "../../assets/projects/IBS/1.webp";
+import ibsSrc2 from "../../assets/projects/IBS/2.webp";
+import ibsSrc3 from "../../assets/projects/IBS/3.webp";
+import ibsSrc4 from "../../assets/projects/IBS/4.webp";
+import ibsSrc5 from "../../assets/projects/IBS/5.webp";
+import ibsSrc6 from "../../assets/projects/IBS/6.webp";
+import ibsSrc7 from "../../assets/projects/IBS/7.webp";
+
+// Russail water images
+import russailSrc1 from "../../assets/projects/RussailWater/1.webp";
+import russailSrc2 from "../../assets/projects/RussailWater/2.webp";
+import russailSrc3 from "../../assets/projects/RussailWater/3.webp";
+import russailSrc4 from "../../assets/projects/RussailWater/4.webp";
+import russailSrc5 from "../../assets/projects/RussailWater/5.webp";
+import russailSrc6 from "../../assets/projects/RussailWater/6.webp";
+import russailSrc7 from "../../assets/projects/RussailWater/7.webp";
+import russailSrc8 from "../../assets/projects/RussailWater/8.webp";
 
 // ajman images
 import ajmanSrc1 from "../../assets/projects/AjmanSelfInspection/1.webp";
@@ -59,11 +80,56 @@ import SafeOneSrc7 from "../../assets/projects/SafeOneGroup/7.webp";
 export const data = [
   {
     id: 1,
+    category: "websites",
+    title: "IBS University",
+    description:
+      "A multilingual website for 'Das Internationale Informatik- und Begegnungszentrum Sachsen (IBS)', a German Based University.",
+    link: "https://folioibsweb.meta-itech.com/",
+    techniques: [
+      { techName: "Next JS", icon: nextjsIcon },
+      {
+        techName: "Material Ui",
+        icon: matertialUiIcon,
+      },
+      { techName: "Google Maps", icon: googleIcon },
+      { techName: "Twitter API", icon: twitterIcon },
+    ],
+    images: [ibsSrc1, ibsSrc2, ibsSrc3, ibsSrc4, ibsSrc5, ibsSrc6, ibsSrc7],
+  },
+  {
+    id: 2,
+    category: "e-commerce",
+    title: "Russail Water",
+    description:
+      "A multi-currency multilingual E-commerce store for Russail water (a company for Water filling and purification) with a chat service and e-payment feature",
+    link: "https://russailwaterweb.meta-itech.com/",
+    techniques: [
+      { techName: "Next JS", icon: nextjsIcon },
+      {
+        techName: "Material Ui",
+        icon: matertialUiIcon,
+      },
+      { techName: "Google Maps", icon: googleIcon },
+      { techName: "E-Payment", icon: ePaymentIcon },
+    ],
+    images: [
+      russailSrc1,
+      russailSrc2,
+      russailSrc3,
+      russailSrc4,
+      russailSrc5,
+      russailSrc6,
+      russailSrc7,
+      russailSrc8,
+    ],
+  },
+  {
+    id: 3,
     category: "system",
     title: "Ajman Self Inspiction",
     description:
       "Smart system to make inspection process faster, more efficient, and smarter using artificial intelligence.",
-    link: "https://sec.am.gov.ae/",
+    //link: "https://sec.am.gov.ae/",
     techniques: [
       { techName: "React JS", icon: reactIcon },
       { techName: "Bootstarp", icon: bootstrapIcon },
@@ -73,7 +139,7 @@ export const data = [
     images: [ajmanSrc1, ajmanSrc2, ajmanSrc3, ajmanSrc4, ajmanSrc5],
   },
   {
-    id: 2,
+    id: 4,
     category: "system",
     title: "Meta CMS",
     description:
@@ -87,7 +153,7 @@ export const data = [
       metaCmsSrc6,
       metaCmsSrc7,
     ],
-    link: "https://foliov2testadmin.meta-itech.com/",
+    //link: "https://foliov2testadmin.meta-itech.com/",
     techniques: [
       { techName: "React JS", icon: reactIcon },
       { techName: "Bootstarp", icon: bootstrapIcon },
@@ -96,7 +162,7 @@ export const data = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     category: "system",
     title: "AE Spare Admin",
     description:
@@ -109,7 +175,7 @@ export const data = [
       spareAdminSrc5,
       spareAdminSrc6,
     ],
-    link: "http://sptestadmin.spare.ae/login",
+    //link: "http://sptestadmin.spare.ae/login",
     techniques: [
       { techName: "React JS", icon: reactIcon },
       { techName: "Bootstarp", icon: bootstrapIcon },
@@ -120,7 +186,7 @@ export const data = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     category: "e-commerce",
     title: "AE Spare Parts",
     description:
@@ -151,7 +217,7 @@ export const data = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     category: "websites",
     title: "Meta Website",
     description:
@@ -165,7 +231,7 @@ export const data = [
       MetaWebsiteSrc6,
       MetaWebsiteSrc7,
     ],
-    link: "https://foliometasolweb.meta-itech.com/",
+    link: "https://meta-itech.com/",
     techniques: [
       { techName: "Next JS", icon: nextjsIcon },
       {
@@ -175,7 +241,7 @@ export const data = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     category: "websites",
     title: "Safe One Group",
     description:
