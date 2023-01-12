@@ -102,7 +102,7 @@ export const data = [
     title: "Russail Water",
     description:
       "A multi-currency multilingual E-commerce store for Russail water (a company for Water filling and purification) with a chat service and e-payment feature",
-    link: "https://russailwaterweb.meta-itech.com/",
+    link: "https://russailwater.ae/en",
     techniques: [
       { techName: "Next JS", icon: nextjsIcon },
       {
